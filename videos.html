@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Barnyard Videos</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #0d47a1;
+            --light: #f5f7fa;
+            --dark: #222;
+            --accent: #ffb300;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                margin: 0 20px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: var(--dark);
+                font-weight: 600;
+                padding: 20px 0;
+                display: block;
+                transition: color 0.3s ease;
+            }
+
+                nav a:hover {
+                    color: var(--primary);
+                }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .video-player {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .clusters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .cluster {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            flex: 1 1 320px;
+            max-width: 100%;
+        }
+
+            .cluster h3 {
+                font-family: 'Merriweather', serif;
+                color: var(--primary);
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+        /* Subclusters side by side */
+        .subclusters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .subcluster {
+            flex: 1 1 200px;
+            min-width: 200px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+            .subcluster h4 {
+                font-family: 'Merriweather', serif;
+                color: var(--secondary);
+                margin-bottom: 10px;
+            }
+
+            .subcluster ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .subcluster li {
+                margin-bottom: 8px;
+            }
+
+            .subcluster a {
+                text-decoration: none;
+                color: var(--secondary);
+                font-weight: 600;
+                transition: color 0.3s ease;
+            }
+
+                .subcluster a:hover {
+                    color: var(--accent);
+                }
+
+        footer {
+            background-color: var(--secondary);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.95em;
+            margin-top: 60px;
+        }
+
+            footer a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!--<li><a href="music.html">Music</a></li>-->
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>📽️ Bible Videos for Kids</h2>
+
+        <!-- Central Video Player -->
+        <div class="video-player">
+            <iframe id="mainVideo" src="https://www.youtube.com/embed/LKtrV_PECS8" allowfullscreen></iframe>
+        </div>
+
+        <!-- Seasons -->
+        <div class="clusters">
+
+            <!-- Season 1 -->
+            <div class="cluster">
+                <h3>🌱 Season 1</h3>
+                <div class="subclusters">
+                    <div class="subcluster">
+                        <h4>❤️ Love</h4>
+                        <ul>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/LKtrV_PECS8">Love 1 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/9UWa_-XbOAY">Love 2 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/TLcTHLhvqyU">Love 3 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/cSeLh3roEOY">Love 4 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/DXoN881bo_w">Love 5 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/wiw-q1XVk8E">Love 6 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/TV7pnBpAP5I">Love 7 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/HDpI0A28KBk">Love 8 of 8</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="subcluster">
+                        <h4>✨ Truth</h4>
+                        <ul>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/Xwr0XQbLSmA">Truth 1 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/3Y9W266z-CE">Truth 2 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/SJ6iT3LseoM">Truth 3 of 8</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/mDmYIwwx3p4">Truth 4 of 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Season 2 (example placeholder)
+            <div class="cluster">
+                <h3>🌟 Season 2</h3>
+                <div class="subclusters">
+                    <div class="subcluster">
+                        <h4>🙏 Faith</h4>
+                        <ul>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/VIDEO_ID_5">Faith Like a Mustard Seed</a></li>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/VIDEO_ID_6">Trust in God</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Bible Barnyard. All content freely given in the spirit of Matthew 10:8.
+    </footer>
+
+    <script>
+        // Automatically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Switch video when a link is clicked
+        document.querySelectorAll('.cluster a').forEach(link => {

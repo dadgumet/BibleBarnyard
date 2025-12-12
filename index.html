@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bible Barnyard</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #0d47a1;
+            --light: #f5f7fa;
+            --dark: #222;
+            --accent: #ffb300;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        /* Banner Image */
+        header {
+            width: 100%;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Hero Text Section */
+        .hero-text {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+            .hero-text h1 {
+                font-family: 'Merriweather', serif;
+                font-size: 3em;
+                margin-bottom: 15px;
+                color: var(--secondary);
+            }
+
+            .hero-text .tagline {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .hero-text .verse {
+                font-style: italic;
+                color: var(--primary);
+                margin-bottom: 25px;
+            }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--primary);
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: var(--secondary);
+            }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                margin: 0 20px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: var(--dark);
+                font-weight: 600;
+                padding: 20px 0;
+                display: block;
+                transition: color 0.3s ease;
+            }
+
+                nav a:hover {
+                    color: var(--primary);
+                }
+
+        /* Sections */
+        main {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        section p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.95em;
+        }
+
+            footer a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="videos.html">Videos</a></li>
+            <!--<li><a href="music.html">Music</a></li>-->
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="videos">
+            <h2>📽️ Bible Videos for Kids</h2>
+            <p>Engaging, scripture-based stories brought to life with animation and uplifting messages.</p>
+            <a href="videos.html" class="btn">Explore Videos</a>
+        </section>
+
+        <!--<section id="music">
+            <h2>🎵 Sing-Along Bible Songs</h2>
+            <p>Original songs that teach scripture through memorable melodies and rhythms children love.</p>
+            <a href="music.html" class="btn">Listen to Music</a>
+        </section>-->
+
+        <section id="about">
+            <h2>🐮 About Bible Barnyard</h2>
+            <p>Bible Barnyard is a joyful place where children learn about God's love through music, stories, and animated friends. All content is free and rooted in scripture — freely given, never for profit.</p>
+        </section>
+
+        <section id="contact">
+            <h2>📬 Contact Us</h2>
+            <p>We’d love to hear from you! Reach out at <a href="mailto:biblebarnyard@gmail.com">biblebarnyard@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Bible Barnyard. All content freely given in the spirit of Matthew 10:8.
+    </footer>
+
+    <script>
+        // Automatically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+    </html>
