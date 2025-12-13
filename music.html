@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Barnyard Music</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><img src="./images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" /> </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./music.html">Music</a></li>
+            <li><a href="./attributions.html">Attributions</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>🎵 Bible Barnyard Music</h2>
+        <div class="audio-player">
+            <audio id="mainAudio" controls></audio>
+        </div>
+        <div class="clusters">
+            <div class="cluster">
+                <h3>Season 1</h3>
+                <div class="subclusters" id="season1"></div>
+            </div>
+            <!--<div class="cluster">
+                <h3>Season 2</h3>
+                <div class="subclusters" id="season2"></div>
+            </div>-->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Bible Barnyard. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Dictionaries for Season 1
+        const Daisy1 = {
+            name: "Daisy", songs:
+                [
+                    { title: "God's Love Is Everywhere", path: "./audio/Season1/Daisy/01_GodsLoveIsEverywhere.mp3" },
+                    { title: "God Loves You", path: "./audio/Season1/Daisy/02_GodLovesYou.mp3" },
+                    { title: "Talk To God Everyday", path: "./audio/Season1/Daisy/03_TalkToGodEveryday.mp3" },
+                    { title: "Under Your Wings", path: "./audio/Season1/Daisy/04_UnderYourWings.mp3" },
+                    { title: "Truth In My Heart", path: "./audio/Season1/Daisy/05_TruthInMyHeart.mp3" },
+                    { title: "Always Tell The Truth", path: "./audio/Season1/Daisy/05b_AlwaysTellTheTruth.mp3" },
+                    { title: "Joshua Walls Came Down", path: "./audio/Season1/Daisy/06_JoshuaWallsCameDown.mp3" },
+                    { title: "Liar Liar", path: "./audio/Season1/Daisy/07_LiarLiar.mp3" }
+                ]
+        };
+
+        const Meadowlark1 = {
+            name: "Meadowlark", songs:
+                [
+                    { title: "Angel Unaware", path: "./audio/Season1/Meadowlark/01_AngelUnaware.mp3" },
+                    { title: "Gods Love Is Big", path: "./audio/Season1/Meadowlark/02_GodsLoveIsBig.mp3" },
+                    { title: "I Belong To God", path: "./audio/Season1/Meadowlark/03_IBelongToGod.mp3" },
+                    { title: "God Made The World", path: "./audio/Season1/Meadowlark/04_GodMadeTheWorld.mp3" },
+                    { title: "Tell The Truth", path: "./audio/Season1/Meadowlark/06_TellTheTruth.mp3" },
+                    { title: "Gideons 300", path: "./audio/Season1/Meadowlark/07_Gideons300.mp3" }
+                ]
+        };
+
+        const Sarge1 = {
+            name: "Sarge", songs:
+                [
+                    { title: "Sarge Intro", path: "./audio/Season1/Sarge/01_Sarge_Intro.mp3" },
+                    { title: "First Five Books", path: "./audio/Season1/Sarge/02_FirstFiveBooks.mp3" },
+                    { title: "For God So Loved", path: "./audio/Season1/Sarge/04_ForGodSoLoved.mp3" },
+                    { title: "Always Tell The Truth", path: "./audio/Season1/Sarge/05_AlwaysTellTheTruth.mp3" },
+                    { title: "Truth I Heard", path: "./audio/Season1/Sarge/05b_TruthIHeard.mp3" },
+                    { title: "Lying Boy", path: "./audio/Season1/Sarge/06_LyingBoy.mp3" },
+                    { title: "The Bible Is Our Guide", path: "./audio/Season1/Sarge/07_BibleIsOurGuide.mp3" }
+                ]
+        };
+
+        const Sivle1 = {
+            name: "Sivle", songs:
+                [
+                    { title: "Gods Love Lasts", path: "./audio/Season1/Sivle/02_GodsLoveLasts.mp3" },
+                    { title: "Gods Word", path: "./audio/Season1/Sivle/03_GodsWord.mp3" },
+                    { title: "Jesus Is The Way", path: "./audio/Season1/Sivle/05_JesusIsTheWay.mp3" },
+                    { title: "Show Me Your Way", path: "./audio/Season1/Sivle/06_ShowMeYourWay.mp3" },
+                    { title: "Judges To The Resuce", path: "./audio/Season1/Sivle/07_JudgesToTheResuce.mp3" }
+                ]
+        };
+
+        // Dictionaries for Season 2 const Daisy2 = { name: "Daisy", songs: [ { title: "Song 1", path: "./audio/Season2/Daisy/song1.mp3" }, { title: "Song", path: "./audio/Season2/Daisy/song2.mp3" } ] }; const Meadowlark2 = { name: "Meadowlark", songs: [ { title: "Song 1", path: "./audio/Season2/Meadowlark/song1.mp3" }, { title: "Song", path: "./audio/Season2/Meadowlark/song2.mp3" } ] }; const Sarge2 = { name: "Sarge", songs: [ { title: "Song 1", path: "./audio/Season2/Sarge/song1.mp3" }, { title: "Song", path: "./audio/Season2/Sarge/song2.mp3" } ] }; const Sivle2 = { name: "Sivle", songs: [ { title: "Song 1", path: "./audio/Season2/Sivle/song1.mp3" }, { title: "Song", path: "./audio/Season2/Sivle/song2.mp3" } ] };
+
+        // Function to generate blocks
+        function createArtistBlock(artist, seasonId) {
+            const subclusters = document.getElementById(seasonId);
+
+            const subclusterDiv = document.createElement("div"); subclusterDiv.className = "subcluster";
+
+            const header = document.createElement("h4"); header.textContent = artist.name; subclusterDiv.appendChild(header);
+
+            artist.songs.forEach(song => {
+                const songBlock = document.createElement("div"); songBlock.className = "song-block";
+
+                const title = document.createElement("div"); title.className = "song-title"; title.textContent = song.title; songBlock.appendChild(title);
+
+                const links = document.createElement("div"); links.className = "song-links";
+
+                const playLink = document.createElement("a"); playLink.href = "#"; playLink.textContent = "▶️ Play"; playLink.dataset.audio = song.path; links.appendChild(playLink);
+
+                const downloadLink = document.createElement("a"); downloadLink.href = song.path; downloadLink.download = ""; downloadLink.textContent = "⬇️ Download"; links.appendChild(downloadLink);
+
+                songBlock.appendChild(links); subclusterDiv.appendChild(songBlock);
+            });
+
+            subclusters.appendChild(subclusterDiv);
+        }
+
+        // Generate Season 1
+        [Daisy1, Meadowlark1, Sarge1, Sivle1].forEach(artist => createArtistBlock(artist, "season1"));
+        // Generate Season 2
+        //[Daisy2, Meadowlark2, Sarge2, Sivle2].forEach(artist => createArtistBlock(artist, "season2"));
+
+        // Hook up play links
+        const mainAudio = document.getElementById("mainAudio");
+        document.addEventListener("click", function (e) {
+            if (e.target.matches("[data-audio]")) {
+                e.preventDefault();
+                mainAudio.src = e.target.dataset.audio; mainAudio.play();
+            }
+        });</script>
+</body>
+</html>

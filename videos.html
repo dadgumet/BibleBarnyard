@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -7,177 +7,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --secondary: #0d47a1;
-            --light: #f5f7fa;
-            --dark: #222;
-            --accent: #ffb300;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.7;
-        }
-
-        header {
-            width: 100%;
-        }
-
-        .hero-img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        nav {
-            background-color: #fff;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-            nav ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-            }
-
-            nav li {
-                margin: 0 20px;
-            }
-
-            nav a {
-                text-decoration: none;
-                color: var(--dark);
-                font-weight: 600;
-                padding: 20px 0;
-                display: block;
-                transition: color 0.3s ease;
-            }
-
-                nav a:hover {
-                    color: var(--primary);
-                }
-
-        main {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 2em;
-            color: var(--secondary);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .video-player {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        iframe {
-            width: 100%;
-            max-width: 800px;
-            height: 450px;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        .clusters {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .cluster {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            flex: 1 1 320px;
-            max-width: 100%;
-        }
-
-            .cluster h3 {
-                font-family: 'Merriweather', serif;
-                color: var(--primary);
-                margin-bottom: 15px;
-                text-align: center;
-            }
-
-        /* Subclusters side by side */
-        .subclusters {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .subcluster {
-            flex: 1 1 200px;
-            min-width: 200px;
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 6px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-            text-align: left;
-        }
-
-            .subcluster h4 {
-                font-family: 'Merriweather', serif;
-                color: var(--secondary);
-                margin-bottom: 10px;
-            }
-
-            .subcluster ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .subcluster li {
-                margin-bottom: 8px;
-            }
-
-            .subcluster a {
-                text-decoration: none;
-                color: var(--secondary);
-                font-weight: 600;
-                transition: color 0.3s ease;
-            }
-
-                .subcluster a:hover {
-                    color: var(--accent);
-                }
-
-        footer {
-            background-color: var(--secondary);
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.95em;
-            margin-top: 60px;
-        }
-
-            footer a {
-                color: var(--accent);
-                text-decoration: none;
-            }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -187,7 +17,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <!--<li><a href="music.html">Music</a></li>-->
+            <li><a href="music.html">Music</a></li>
             <li><a href="attributions.html">Attributions</a></li>
         </ul>
     </nav>
@@ -196,7 +26,7 @@
         <h2>📽️ Bible Videos for Kids</h2>
 
         <!-- Central Video Player -->
-        <div class="video-player">
+        <div class="main-video">
             <iframe id="mainVideo" src="https://www.youtube.com/embed/LKtrV_PECS8" allowfullscreen></iframe>
         </div>
 
