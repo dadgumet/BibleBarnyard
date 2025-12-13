@@ -198,3 +198,44 @@ video {
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
+
+/* Section styling */
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center; /* <-- this centers inline-block children like .btn */
+}
+
+    section h2 {
+        font-family: 'Merriweather', serif;
+        color: var(--primary);
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* optional spacing above */
+}
+
+    .btn:hover {
+        background-color: var(--secondary);
+    }
