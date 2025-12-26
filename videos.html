@@ -30,6 +30,13 @@
             <iframe id="mainVideo" src="https://www.youtube.com/embed/LKtrV_PECS8" allowfullscreen></iframe>
         </div>
 
+        <!-- Reset Button -->
+        <div class="reset-row">
+            <button id="resetWatched" class="reset-btn">Mark All as Unwatched</button>
+            <span class="reset-note">✔️ means you’ve already watched that video</span>
+        </div>
+
+
         <!-- Seasons -->
         <div class="clusters">
 
@@ -37,6 +44,7 @@
             <div class="cluster">
                 <h3>🌱 Season 1</h3>
                 <div class="subclusters">
+
                     <div class="subcluster">
                         <h4>❤️ Love</h4>
                         <ul>
@@ -64,22 +72,17 @@
                             <li><a href="#" data-video="https://www.youtube.com/embed/t3wlpDZFdHs">Truth 8 of 8</a></li>
                         </ul>
                     </div>
+
+                    <div class="subcluster">
+                        <h4>😊 Joy</h4>
+                        <ul>
+                            <li><a href="#" data-video="https://www.youtube.com/embed/moWFmv_GLoM">Joy 1 of 8</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Season 2 (example placeholder)
-            <div class="cluster">
-                <h3>🌟 Season 2</h3>
-                <div class="subclusters">
-                    <div class="subcluster">
-                        <h4>🙏 Faith</h4>
-                        <ul>
-                            <li><a href="#" data-video="https://www.youtube.com/embed/VIDEO_ID_5">Faith Like a Mustard Seed</a></li>
-                            <li><a href="#" data-video="https://www.youtube.com/embed/VIDEO_ID_6">Trust in God</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </main>
 
@@ -88,16 +91,63 @@
     </footer>
 
     <script>
-        // Automatically set the current year
+        // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Switch video when a link is clicked
-        document.querySelectorAll('.cluster a').forEach(link =>
-        {
-            link.addEventListener('click', e => {
-                e.preventDefault(); const videoUrl = link.getAttribute('data-video');
-                document.getElementById('mainVideo').src = videoUrl;
+        // Load viewed videos from localStorage
+        const viewedVideos = JSON.parse(localStorage.getItem('viewedVideos') || "[]");
+
+        // Add checkmarks to already-viewed videos
+        function updateViewedIcons() {
+            document.querySelectorAll('.cluster a').forEach(link => {
+                const url = link.getAttribute('data-video');
+
+                // Look for an existing checkmark right after the link
+                let existing = link.nextElementSibling;
+                if (existing && existing.classList.contains('viewed')) {
+                    // If it's there but shouldn't be, remove it
+                    if (!viewedVideos.includes(url)) {
+                        existing.remove();
+                    }
+                    return; // nothing else to do
+                }
+
+                // If this video has been viewed and no checkmark exists, add one
+                if (viewedVideos.includes(url)) {
+                    const check = document.createElement('span');
+                    check.classList.add('viewed');
+                    check.textContent = " ✔️";
+                    link.insertAdjacentElement('afterend', check);
+                }
             });
-        });</script>
+        }
+
+        updateViewedIcons();
+
+        // Handle video clicks
+        document.querySelectorAll('.cluster a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+
+                const videoUrl = link.getAttribute('data-video');
+                document.getElementById('mainVideo').src = videoUrl;
+
+                if (!viewedVideos.includes(videoUrl)) {
+                    viewedVideos.push(videoUrl);
+                    localStorage.setItem('viewedVideos', JSON.stringify(viewedVideos));
+                }
+
+                updateViewedIcons();
+            });
+        });
+
+        // Reset button: Mark all as unwatched
+        document.getElementById('resetWatched').addEventListener('click', () => {
+            localStorage.removeItem('viewedVideos');
+            viewedVideos.length = 0;
+            updateViewedIcons();
+        });
+    </script>
+
 </body>
 </html>

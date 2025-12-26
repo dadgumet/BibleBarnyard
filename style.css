@@ -188,7 +188,7 @@ video {
 
 .main-video {
     text-align: center; /* keeps it centered */
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
     .main-video iframe {
@@ -236,6 +236,65 @@ section {
     margin-top: 10px; /* optional spacing above */
 }
 
-    .btn:hover {
-        background-color: var(--secondary);
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+.viewed {
+    color: green;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.reset-btn {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 18px;
+    background-color: #5cb85c; /* soft green */
+    color: #ffffff;
+    border: none;
+    border-radius: 999px; /* pill shape */
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+    .reset-btn:hover {
+        background-color: #4cae4c;
+        transform: translateY(-1px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     }
+
+    .reset-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+/* Center the button within main content */
+main {
+    text-align: center;
+}
+
+.viewed {
+    color: green;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.reset-row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto 10px auto; /* reduced top & bottom spacing */
+}
+
+.reset-note {
+    font-size: 0.9rem;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+}
+
