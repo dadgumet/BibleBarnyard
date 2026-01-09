@@ -6,7 +6,6 @@
     <meta name="p:domain_verify" content="c8558d85051b921ac4e3caafdfd5c533" />
     <title>Bible Barnyard Videos</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -26,22 +25,18 @@
     <main>
         <h2>📽️ Bible Videos for Kids</h2>
 
-        <!-- Central Video Player -->
         <div class="main-video">
             <iframe id="mainVideo" src="https://www.youtube.com/embed/LKtrV_PECS8" allowfullscreen></iframe>
         </div>
 
-        <!-- Reset Button -->
         <div class="reset-row">
             <button id="resetWatched" class="reset-btn">Mark All as Unwatched</button>
             <span class="reset-note">✔️ means you’ve already watched that video</span>
         </div>
 
 
-        <!-- Seasons -->
         <div class="clusters">
 
-            <!-- Season 1 -->
             <div class="cluster">
                 <h3>🌱 Season 1</h3>
                 <div class="subclusters">
@@ -98,6 +93,22 @@
         // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // --- NEW PINTEREST LINK LOGIC ---
+        // Checks URL for ?v=VideoID and updates the player automatically
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get('v');
+
+        if (videoId) {
+            const embedUrl = "https://www.youtube.com/embed/" + videoId;
+            document.getElementById('mainVideo').src = embedUrl;
+
+            // Scrolls to the video player so visitors see it right away
+            window.addEventListener('load', () => {
+                document.querySelector('.main-video').scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+        // --------------------------------
+
         // Load viewed videos from localStorage
         const viewedVideos = JSON.parse(localStorage.getItem('viewedVideos') || "[]");
 
@@ -109,11 +120,10 @@
                 // Look for an existing checkmark right after the link
                 let existing = link.nextElementSibling;
                 if (existing && existing.classList.contains('viewed')) {
-                    // If it's there but shouldn't be, remove it
                     if (!viewedVideos.includes(url)) {
                         existing.remove();
                     }
-                    return; // nothing else to do
+                    return;
                 }
 
                 // If this video has been viewed and no checkmark exists, add one
