@@ -8,7 +8,110 @@
     <link rel="icon" type="image/png" href="/images/fav.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .main-video {
+            position: relative;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 400px;
+        }
+
+        .placeholder-content {
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+
+        .placeholder-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        .placeholder-content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-family: 'Merriweather', serif;
+        }
+
+        .placeholder-content p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        #mainVideo {
+            width: 100%;
+            display: none;
+        }
+
+        .video-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 10;
+        }
+
+            .video-loading.show {
+                opacity: 1;
+            }
+
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <img src="/images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
@@ -26,11 +129,24 @@
     <main>
         <h2>📽️ Bible Videos for Kids</h2>
 
-        <div class="main-video">
-            <video id="mainVideo" controls preload="auto">
-                <source src="https://assets.biblebarnyard.com/series/A/A01ALove_s.mp4" type="video/mp4">
+        <div class="main-video" id="videoContainer">
+            <div class="video-placeholder" id="videoPlaceholder">
+                <div class="placeholder-content">
+                    <div class="placeholder-icon">🎬</div>
+                    <h3>Select a video to begin</h3>
+                    <p>Choose any episode from the list below</p>
+                </div>
+            </div>
+
+            <video id="mainVideo" controls preload="metadata" playsinline>
+                <source src="" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+
+            <div class="video-loading" id="videoLoading">
+                <div class="spinner"></div>
+                <div>Loading video...</div>
+            </div>
         </div>
 
         <div class="reset-row">
@@ -39,272 +155,117 @@
         </div>
 
         <div class="clusters">
-            <div class="cluster">
-                <h3>🌱 Season 1</h3>
-                <div class="subclusters">
-
-                    <!-- LOVE -->
-                    <div class="subcluster">
-                        <h4>❤️ Love</h4>
-                        <div class="video-block">
-                            <div class="video-title">Love 1 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A01ALove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A01ALove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 2 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A01BLove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A01BLove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 3 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A02ALove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A02ALove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 4 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A02BLove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A02BLove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 5 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A03ALove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A03ALove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 6 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A03BLove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A03BLove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 7 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A04ALove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A04ALove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Love 8 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A04BLove_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A04BLove_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TRUTH -->
-                    <div class="subcluster">
-                        <h4>✨ Truth</h4>
-                        <div class="video-block">
-                            <div class="video-title">Truth 1 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A05ATruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A05ATruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 2 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A05BTruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A05BTruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 3 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A06ATruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A06ATruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 4 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A06BTruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A06BTruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 5 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A07ATruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A07ATruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 6 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A07BTruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A07BTruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 7 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A08ATruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A08ATruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Truth 8 of 8</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A08BTruth_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A08BTruth_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- JOY -->
-                    <div class="subcluster">
-                        <h4>😊 Joy</h4>
-                        <div class="video-block">
-                            <div class="video-title">Joy 1 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A09AJoy_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A09AJoy_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Joy 2 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A09BJoy_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A09BJoy_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Joy 3 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A10AJoy_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A10AJoy_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Joy 4 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A10BJoy_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A10BJoy_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-
-                        <h4>👨‍👩‍👧‍👦 Parents</h4>
-                        <div class="video-block">
-                            <div class="video-title">Parents 1 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A11AParents_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A11AParents_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Parents 2 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A11BParents_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A11BParents_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Parents 3 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A12AParents_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A12AParents_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                        <div class="video-block">
-                            <div class="video-title">Parents 4 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A12BParents_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A12BParents_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- LYING -->
-                    <div class="subcluster">
-                        <h4>🤥 Lying</h4>
-                        <div class="video-block">
-                            <div class="video-title">Lying 1 of 4</div>
-                            <div class="video-links">
-                                <a href="#" data-video="https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4">▶️ Play</a>
-                                <a href="https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4" download>⬇️ Download</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <!-- Videos will be dynamically generated here -->
         </div>
     </main>
 
     <footer>
-        &copy; <span id="year"></span> Bible Barnyard. All content freely given in the spirit of Matthew 10:8. Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) License Apply.
+        &copy; <span id="year"></span> Bible Barnyard. All content freely given in the spirit of Matthew 10:8.
     </footer>
 
+    <script src="./videos-data.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // Generate the video map from the data
+        const videoMap = generateVideoMap();
+
         const viewedVideos = JSON.parse(localStorage.getItem('viewedVideos') || "[]");
+        const player = document.getElementById('mainVideo');
+        const loadingIndicator = document.getElementById('videoLoading');
+        const placeholder = document.getElementById('videoPlaceholder');
+        const videoContainer = document.getElementById('videoContainer');
+        let isFirstPlay = true;
+
+        function loadVideo(videoUrl) {
+            if (isFirstPlay) {
+                placeholder.style.display = 'none';
+                player.style.display = 'block';
+                isFirstPlay = false;
+            }
+
+            videoContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            loadingIndicator.classList.add('show');
+
+            const startPlayback = () => {
+                loadingIndicator.classList.remove('show');
+                const playPromise = player.play();
+                if (playPromise) playPromise.catch(() => { });
+            };
+
+            player.onloadedmetadata = startPlayback;
+            player.onloadeddata = startPlayback;
+            player.oncanplay = () => loadingIndicator.classList.remove('show');
+
+            player.querySelector('source').src = videoUrl;
+            player.load();
+
+            if (!viewedVideos.includes(videoUrl)) {
+                viewedVideos.push(videoUrl);
+                localStorage.setItem('viewedVideos', JSON.stringify(viewedVideos));
+            }
+
+            updateViewedIcons();
+        }
 
         function updateViewedIcons() {
             document.querySelectorAll('.video-block').forEach(block => {
                 const playLink = block.querySelector('[data-video]');
-                const url = playLink.getAttribute('data-video');
+                if (!playLink) return;
+
+                const videoId = playLink.getAttribute('data-video');
+                const videoUrl = videoMap[videoId];
                 let existing = block.querySelector('.viewed');
 
-                if (existing) {
-                    if (!viewedVideos.includes(url)) existing.remove();
-                    return;
-                }
-
-                if (viewedVideos.includes(url)) {
+                if (viewedVideos.includes(videoUrl) && !existing) {
                     const check = document.createElement('span');
                     check.classList.add('viewed');
                     check.textContent = " ✔️";
                     block.querySelector('.video-title').appendChild(check);
                 }
+
+                if (!viewedVideos.includes(videoUrl) && existing) {
+                    existing.remove();
+                }
             });
+        }
+
+        function attachVideoListeners() {
+            document.querySelectorAll('[data-video]').forEach(link => {
+                link.addEventListener('click', e => {
+                    e.preventDefault();
+                    const videoId = link.getAttribute('data-video');
+                    const videoUrl = videoMap[videoId];
+
+                    if (videoUrl) {
+                        loadVideo(videoUrl);
+                    }
+                });
+            });
+        }
+
+        // Build the interface first
+        buildVideoInterface();
+
+        // Then attach listeners
+        attachVideoListeners();
+
+        // Check for ?v= parameter on page load
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get('v');
+
+        if (videoId && videoMap[videoId]) {
+            loadVideo(videoMap[videoId]);
         }
 
         updateViewedIcons();
 
-        document.querySelectorAll('[data-video]').forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-
-                const videoUrl = link.getAttribute('data-video');
-                const player = document.getElementById('mainVideo');
-
-                player.querySelector('source').src = videoUrl;
-                player.load();
-
-                // Start playing as soon as enough data is loaded
-                player.addEventListener('canplay', function playHandler() {
-                    player.play();
-                    player.removeEventListener('canplay', playHandler);
-                }, { once: true });
-
-                if (!viewedVideos.includes(videoUrl)) {
-                    viewedVideos.push(videoUrl);
-                    localStorage.setItem('viewedVideos', JSON.stringify(viewedVideos));
-                }
-
-                updateViewedIcons();
-            });
-        });
-
         document.getElementById('resetWatched').addEventListener('click', () => {
-            localStorage.removeItem('viewedVideos');
-            viewedVideos.length = 0;
-            updateViewedIcons();
+            if (confirm('Are you sure you want to mark all videos as unwatched?')) {
+                localStorage.removeItem('viewedVideos');
+                viewedVideos.length = 0;
+                updateViewedIcons();
+            }
         });
     </script>
 
