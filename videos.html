@@ -77,9 +77,9 @@
                     <div class="subcluster">
                         <h4>😊 Joy</h4>
                         <ul>
-                            <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A09_A_Joy.mp4">Joy 1 of 4</a></li>
-                            <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A09_B_Joy.mp4">Joy 2 of 4</a></li>
-                            <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A10_A_Joy.mp4">Joy 3 of 4</a></li>
+                            <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A09_A_Truth.mp4">Joy 1 of 4</a></li>
+                            <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A09_B_Truth.mp4">Joy 2 of 4</a></li>
+                            <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A10_A_Truth.mp4">Joy 3 of 4</a></li>
                             <li><a href="#" data-video="https://assets.biblebarnyard.com/series/A/Bible_Barnyard_A10_B_Joy.mp4">Joy 4 of 4</a></li>
 
                         </ul>
@@ -145,7 +145,12 @@
 
                 player.querySelector('source').src = videoUrl;
                 player.load();
-                player.play();
+
+                // Start playing as soon as enough data is loaded
+                player.addEventListener('canplay', function playHandler() {
+                    player.play();
+                    player.removeEventListener('canplay', playHandler);
+                }, { once: true });
 
                 if (!viewedVideos.includes(videoUrl)) {
                     viewedVideos.push(videoUrl);
