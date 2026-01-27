@@ -236,9 +236,9 @@ section {
     margin-top: 10px; /* optional spacing above */
 }
 
-.btn:hover {
-    background-color: var(--secondary);
-}
+    .btn:hover {
+        background-color: var(--secondary);
+    }
 
 .viewed {
     color: green;
@@ -298,3 +298,130 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Privacy Policy Styles */
+.privacy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.privacy-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .privacy-intro p {
+        max-width: 700px;
+        margin: 10px auto;
+        font-size: 1.05em;
+        line-height: 1.6;
+    }
+
+    .privacy-intro strong {
+        color: #2c3e50;
+    }
+
+.credits-section {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+    .credits-section h3 {
+        font-family: 'Merriweather', serif;
+        color: #2c3e50;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.4em;
+    }
+
+    .credits-section p {
+        line-height: 1.7;
+        margin-bottom: 12px;
+        color: #34495e;
+    }
+
+        .credits-section p:last-child {
+            margin-bottom: 0;
+        }
+
+    .credits-section ul {
+        margin: 15px 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .credits-section li {
+        line-height: 1.7;
+        margin-bottom: 8px;
+        color: #34495e;
+        padding-left: 20px;
+        position: relative;
+    }
+
+        .credits-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+    .credits-section a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .credits-section a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+
+    .credits-section strong {
+        color: #2c3e50;
+    }
+
+    /* Highlight first section */
+    .credits-section:first-of-type {
+        border-left-color: #27ae60;
+    }
+
+.privacy-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 30px;
+}
+
+    .privacy-summary h3 {
+        color: white;
+    }
+
+    .privacy-summary p {
+        color: white;
+        opacity: 0.95;
+    }
+
+    .privacy-summary strong {
+        color: white;
+        font-weight: 700;
+    }
+
+/* Responsive adjustments for privacy page */
+@media (max-width: 768px) {
+    .credits-section {
+        padding: 20px 18px;
+    }
+
+    .privacy-intro p {
+        font-size: 1em;
+    }
+
+    .credits-section h3 {
+        font-size: 1.2em;
+    }
+}

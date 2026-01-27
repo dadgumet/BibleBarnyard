@@ -1,0 +1,132 @@
+<footer>
+    <div class="footer-content">
+        <div class="footer-subscribe">
+            <h3>📢 Stay Connected</h3>
+            <p>Get notified when we add new videos and music!</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/channel/UCyHsCPjXYYiYD0yaA-EWQLQ" target="_blank" rel="noopener noreferrer" class="social-btn youtube">
+                    <span class="social-icon">▶️</span> Subscribe on YouTube
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61580663443144" target="_blank" rel="noopener noreferrer" class="social-btn facebook">
+                    <span class="social-icon">👍</span> Follow on Facebook
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; <span class="year"></span> Bible Barnyard. All content freely given in the spirit of Matthew 10:8.
+            Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) License Apply.
+            | <a href="privacy.html" style="color: #fff; text-decoration: underline;">Privacy Policy</a>
+        </div>
+    </div>
+
+    <script>
+        // Automatically set the current year in all year spans
+        document.querySelectorAll('.year').forEach(el => {
+            el.textContent = new Date().getFullYear();
+        });
+    </script>
+</footer>
+
+<style>
+    footer {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        color: white;
+        padding: 40px 20px 20px;
+        margin-top: 60px;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-subscribe {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        .footer-subscribe h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-subscribe p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+    .social-links {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .social-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 1em;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .social-btn.youtube {
+            background: #FF0000;
+        }
+
+            .social-btn.youtube:hover {
+                background: #cc0000;
+            }
+
+        .social-btn.facebook {
+            background: #1877F2;
+        }
+
+            .social-btn.facebook:hover {
+                background: #0d65d9;
+            }
+
+    .social-icon {
+        font-size: 1.2em;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+
+        .footer-bottom a {
+            color: #fff;
+        }
+
+    @media (max-width: 600px) {
+        .social-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-btn {
+            width: 100%;
+            max-width: 280px;
+            justify-content: center;
+        }
+    }
+</style>

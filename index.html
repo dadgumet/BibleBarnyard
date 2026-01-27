@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="p:domain_verify" content="c8558d85051b921ac4e3caafdfd5c533" />
-    <title>Bible Barnyard</title>
-    <link rel="icon" type="image/png" href="/images/fav.png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="p:domain_verify" content="c8558d85051b921ac4e3caafdfd5c533" />
+        <title>Bible Barnyard</title>
+        <link rel="icon" type="image/png" href="/images/fav.png">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <img src="./images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
-    </header>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <img src="./images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="attributions.html">Attributions</a></li>
-            <li><a href="./privacy.html">Privacy Statement</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="./privacy.html">Privacy Statement</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section id="videos">
-            <h2>📽️ Bible Videos for Kids</h2>
-            <p>Engaging, scripture-based stories brought to life with animation and uplifting messages.</p>
-            <a href="videos.html" class="btn">Explore Videos</a>
-        </section>
+        <main>
+            <section id="videos">
+                <h2>📽️ Bible Videos for Kids</h2>
+                <p>Engaging, scripture-based stories brought to life with animation and uplifting messages.</p>
+                <a href="videos.html" class="btn">Explore Videos</a>
+            </section>
 
-        <section id="music">
-            <h2>🎵 Sing-Along Bible Songs</h2>
-            <p>Original songs that teach scripture through memorable melodies and rhythms children love.</p>
-            <a href="music.html" class="btn">Listen to Music</a>
-        </section>
+            <section id="music">
+                <h2>🎵 Sing-Along Bible Songs</h2>
+                <p>Original songs that teach scripture through memorable melodies and rhythms children love.</p>
+                <a href="music.html" class="btn">Listen to Music</a>
+            </section>
 
-        <section id="about">
-            <h2>🐮 About Bible Barnyard</h2>
-            <p>Bible Barnyard is a joyful place where children learn about God's love through music, stories, and animated friends. All content is free and rooted in scripture — freely given, never for profit.</p>
-        </section>
+            <section id="about">
+                <h2>🐮 About Bible Barnyard</h2>
+                <p>Bible Barnyard is a joyful place where children learn about God's love through music, stories, and animated friends. All content is free and rooted in scripture — freely given, never for profit.</p>
+            </section>
 
-        <section id="contact">
-            <h2>📬 Contact Us</h2>
-            <p>We’d love to hear from you! Reach out at <a href="mailto:outreach@biblebarnyard.com">outreach@biblebarnyard.com</a></p>
-        </section>
-    </main>
+            <section id="contact">
+                <h2>📬 Contact Us</h2>
+                <p>We’d love to hear from you! Reach out at <a href="mailto:crew@biblebarnyard.com">crew@biblebarnyard.com</a></p>
+            </section>
+        </main>
 
-    <footer>
-        &copy; <span id="year"></span> Bible Barnyard. All content freely given in the spirit of Matthew 10:8. Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) License Apply.
-    </footer>
+        <!-- NEW FOOTER INCLUDE -->
+        <div id="footer-placeholder"></div>
 
-    <script>
-        // Automatically set the current year
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-</body>
-    </html>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+    </body>
+</html>
