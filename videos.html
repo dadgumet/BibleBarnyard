@@ -209,6 +209,33 @@
             }
 
             updateViewedIcons();
+
+            // ADD VIDEO PLAY TRACKING
+            const fileName = videoUrl.split('/').pop();
+            console.log('Video loaded:', fileName);
+
+            // Remove any existing play listener to avoid duplicates
+            player.removeEventListener('play', trackVideoPlay);
+
+            // Add new play listener
+            function trackVideoPlay() {
+                console.log('Video actually playing:', fileName);
+
+                fetch('https://biblebarnyard-analytics.biblebarnyard.workers.dev', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action: 'play', file: fileName })
+                })
+                    .then(response => response.json())
+                    .then(data => console.log('Video play tracking response:', data))
+                    .catch(error => console.warn('Video play tracking error:', error));
+
+                // Remove listener after tracking to avoid duplicate tracking
+                player.removeEventListener('play', trackVideoPlay);
+            }
+
+            // Add the play event listener
+            player.addEventListener('play', trackVideoPlay);
         }
 
         function updateViewedIcons() {
@@ -241,6 +268,23 @@
                     const videoUrl = videoMap[videoId];
 
                     if (videoUrl) {
+                        // TRACK VIDEO SELECTION
+                        const fileName = videoUrl.split('/').pop();
+                        console.log('Tracking video selection:', fileName);
+
+                        // Send analytics
+                        fetch('https://biblebarnyard-analytics.biblebarnyard.workers.dev', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ action: 'play', file: fileName })
+                        })
+                            .then(response => {
+                                console.log('Video analytics status:', response.status);
+                                return response.json();
+                            })
+                            .then(data => console.log('Video analytics response:', data))
+                            .catch(error => console.warn('Video analytics error:', error));
+
                         loadVideo(videoUrl);
                     }
                 });
