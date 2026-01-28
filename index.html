@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="p:domain_verify" content="c8558d85051b921ac4e3caafdfd5c533" />
-        <title>Bible Barnyard</title>
-        <link rel="icon" type="image/png" href="/images/fav.png">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="p:domain_verify" content="c8558d85051b921ac4e3caafdfd5c533" />
+    <title>Bible Barnyard</title>
+    <link rel="icon" type="image/png" href="/images/fav.png">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <header>
-            <img src="./images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
-        </header>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .video-section-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-        <nav>
-            <ul>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="attributions.html">Attributions</a></li>
-                <li><a href="./privacy.html">Privacy Statement</a></li>
-            </ul>
-        </nav>
+        .video-text {
+            flex: 1;
+            min-width: 280px;
+        }
 
-        <main>
-            <section id="videos">
-                <h2>📽️ Bible Videos for Kids</h2>
-                <p>Engaging, scripture-based stories brought to life with animation and uplifting messages.</p>
-                <a href="videos.html" class="btn">Explore Videos</a>
-            </section>
+        .video-container {
+            flex: 0 0 350px;
+            max-width: 350px;
+        }
 
-            <section id="music">
-                <h2>🎵 Sing-Along Bible Songs</h2>
-                <p>Original songs that teach scripture through memorable melodies and rhythms children love.</p>
-                <a href="music.html" class="btn">Listen to Music</a>
-            </section>
+            .video-container video {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
 
-            <section id="about">
-                <h2>🐮 About Bible Barnyard</h2>
-                <p>Bible Barnyard is a joyful place where children learn about God's love through music, stories, and animated friends. All content is free and rooted in scripture — freely given, never for profit.</p>
-            </section>
+        @media (max-width: 768px) {
+            .video-section-content {
+                flex-direction: column;
+            }
 
-            <section id="contact">
-                <h2>📬 Contact Us</h2>
-                <p>We’d love to hear from you! Reach out at <a href="mailto:crew@biblebarnyard.com">crew@biblebarnyard.com</a></p>
-            </section>
-        </main>
+            .video-container {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/bibleBarnyardBanner.png" alt="Bible Barnyard Banner" class="hero-img" />
+    </header>
 
-        <!-- NEW FOOTER INCLUDE -->
-        <div id="footer-placeholder"></div>
+    <nav>
+        <ul>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+            <li><a href="./privacy.html">Privacy Statement</a></li>
+        </ul>
+    </nav>
 
-        <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-placeholder').innerHTML = data;
-                });
-        </script>
-    </body>
+    <main>
+        <section id="videos">
+            <h2>🎬 Bible Videos for Kids</h2>
+            <div class="video-section-content">
+                <div class="video-text">
+                    <p>Engaging, scripture-based stories brought to life with animation and uplifting messages.</p>
+                    <a href="videos.html" class="btn">Explore Videos</a>
+                </div>
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="./images/bbWelcome.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="music">
+            <h2>🎵 Sing-Along Bible Songs</h2>
+            <p>Original songs that teach scripture through memorable melodies and rhythms children love.</p>
+            <a href="music.html" class="btn">Listen to Music</a>
+        </section>
+
+        <section id="about">
+            <h2>🐮 About Bible Barnyard</h2>
+            <p>Bible Barnyard is a joyful place where children learn about God's love through music, stories, and animated friends. All content is free and rooted in scripture – freely given, never for profit.</p>
+        </section>
+
+        <section id="contact">
+            <h2>📬 Contact Us</h2>
+            <p>We'd love to hear from you! Reach out at <a href="mailto:crew@biblebarnyard.com">crew@biblebarnyard.com</a></p>
+        </section>
+    </main>
+
+    <!-- NEW FOOTER INCLUDE -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
 </html>
