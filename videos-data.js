@@ -55,7 +55,8 @@ const videosData = {
             'Lying': {
                 emoji: '🤥',
                 videos: [
-                    { id: 'lying1', title: 'Lying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4' }
+                    { id: 'lying1', title: 'Lying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4' },
+                    { id: 'lying2', title: 'Lying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13BLying_d.mp4' },
                 ]
             }
         }
