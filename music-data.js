@@ -22,7 +22,8 @@ const Daisy1 = {
         { title: "Noah Safe And Sound", path: "./audio/Season1/Daisy/10_NoahSafeAndSound.mp3" },
         { title: "God Wants Me", path: "./audio/Season1/Daisy/11_GodWantsMe.mp3" },
         { title: "God Sees Hears and Knows", path: "./audio/Season1/Daisy/12_GodSeesHearsAndKnows.mp3" },
-        { title: "Melvin the Gopher", path: "./audio/Season1/Daisy/13_MelvintheGopher.mp3" }
+        { title: "Melvin the Gopher", path: "./audio/Season1/Daisy/13_MelvintheGopher.mp3" },
+        { title: "Keep Your Tongue From Evil", path: "./audio/Season1/Daisy/14_KeepYourTongueFromEvil.mp3" }        
     ]
 };
 
@@ -40,9 +41,10 @@ const Meadowlark1 = {
         { title: "Joy In The Morning", path: "./audio/Season1/Meadowlark/10_JoyInTheMorning.mp3" },
         { title: "Obey Your Parents", path: "./audio/Season1/Meadowlark/11_ObeyYourParents.mp3" },
         { title: "Parents Teach", path: "./audio/Season1/Meadowlark/12_ParentsTeach.mp3" },
-        { title: "1st Samuel 7", path: "./audio/Season1/Meadowlark/13_1stSamuel7.mp3" }
+        { title: "1st Samuel 7", path: "./audio/Season1/Meadowlark/13_1stSamuel7.mp3" },
+        { title: "Does God Still Love Me", path: "./audio/Season1/Meadowlark/14_DoesGodStillLoveMe.mp3" }
     ]
-};
+};    
 
 const Sarge1 = {
     name: "Sarge",
