@@ -60,7 +60,8 @@ const Sarge1 = {
         { title: "Terrance Is Slow", path: "./audio/Season1/Sarge/09_TerranceIsSlow.mp3" },
         { title: "Its Not The Church", path: "./audio/Season1/Sarge/10_ItsNotTheChurch.mp3" },
         { title: "P-A-R-E-N-T-S", path: "./audio/Season1/Sarge/11_PARENTS.mp3" },
-        { title: "Tell No Lies", path: "./audio/Season1/Sarge/13_TellNoLies.mp3" }
+        { title: "Tell No Lies", path: "./audio/Season1/Sarge/13_TellNoLies.mp3" },
+        { title: "David Wasn't Perfect", path: "./audio/Season1/Sarge/14_DavidWasntPerfect.mp3" }
     ]
 };
 
@@ -76,7 +77,8 @@ const Sivle1 = {
         { title: "Walking in the Truth", path: "./audio/Season1/Sivle/09_WalkingInTheTruth.mp3" },
         { title: "Chirp the Sparrow", path: "./audio/Season1/Sivle/10_ChirpTheSparrow.mp3" },
         { title: "David and Goliath", path: "./audio/Season1/Sivle/12_DavidAndGoliath.mp3" },
-        { title: "Six Yet Seven", path: "./audio/Season1/Sivle/13_SixYetSeven.mp3" }
+        { title: "Six Yet Seven", path: "./audio/Season1/Sivle/13_SixYetSeven.mp3" },
+        { title: "Sweet To Stones", path: "./audio/Season1/Sivle/14_SweetToStones.mp3" }
     ]
 };
 
