@@ -23,7 +23,8 @@ const Daisy1 = {
         { title: "God Wants Me", path: "./audio/Season1/Daisy/11_GodWantsMe.mp3" },
         { title: "God Sees Hears and Knows", path: "./audio/Season1/Daisy/12_GodSeesHearsAndKnows.mp3" },
         { title: "Melvin the Gopher", path: "./audio/Season1/Daisy/13_MelvintheGopher.mp3" },
-        { title: "Keep Your Tongue From Evil", path: "./audio/Season1/Daisy/14_KeepYourTongueFromEvil.mp3" }        
+        { title: "Keep Your Tongue From Evil", path: "./audio/Season1/Daisy/14_KeepYourTongueFromEvil.mp3" }  ,
+        { title: "Why Bad Things Happen", path: "./audio/Season1/Daisy/15_WhyBadThingsHappen.mp3" }        
     ]
 };
 
@@ -42,7 +43,8 @@ const Meadowlark1 = {
         { title: "Obey Your Parents", path: "./audio/Season1/Meadowlark/11_ObeyYourParents.mp3" },
         { title: "Parents Teach", path: "./audio/Season1/Meadowlark/12_ParentsTeach.mp3" },
         { title: "1st Samuel 7", path: "./audio/Season1/Meadowlark/13_1stSamuel7.mp3" },
-        { title: "Does God Still Love Me", path: "./audio/Season1/Meadowlark/14_DoesGodStillLoveMe.mp3" }
+        { title: "Does God Still Love Me", path: "./audio/Season1/Meadowlark/14_DoesGodStillLoveMe.mp3" },
+        { title: "We Broke the World", path: "./audio/Season1/Meadowlark/15_WeBroketheWorld.mp3" }
     ]
 };    
 

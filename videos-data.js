@@ -52,14 +52,28 @@ const videosData = {
                     }
                 }
             },
-            'Lying': {
+            'Lying & Why Bad Things Happen': {
                 emoji: '🤥',
-                videos: [
-                    { id: 'lying1', title: 'Lying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4' },
-                    { id: 'lying2', title: 'Lying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13BLying_d.mp4' },
-                    { id: 'lying3', title: 'Lying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14ALying_d.mp4' },
-                    { id: 'lying4', title: 'Lying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14BLying_d.mp4' }
-                ]
+                subcategories: {
+                    'Lying': {
+                        emoji: '🤥',
+                        videos: [
+                            { id: 'lying1', title: 'Lying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4' },
+                            { id: 'lying2', title: 'Lying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13BLying_d.mp4' },
+                            { id: 'lying3', title: 'Lying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14ALying_d.mp4' },
+                            { id: 'lying4', title: 'Lying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14BLying_d.mp4' }
+                        ]
+                    },
+                    'Why Bad Things Happen': {
+                        emoji: '❓',
+                        videos: [
+                            { id: 'whybad1', title: 'Why Bad Things Happen 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A15ABadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A15ABadThings_d.mp4' },
+                            // { id: 'whybad2', title: 'Why Bad Things Happen 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A15BBadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A15BBadThings_d.mp4' },
+                            // { id: 'whybad3', title: 'Why Bad Things Happen 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A16ABadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A16ABadThings_d.mp4' },
+                            // { id: 'whybad4', title: 'Why Bad Things Happen 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A16BBadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A16BBadThings_d.mp4' }
+                        ]
+                    }
+                }
             }
         }
     }
