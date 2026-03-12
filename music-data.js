@@ -88,6 +88,14 @@ const Sivle1 = {
     ]
 };
 
+const Billie1 = {
+    name: "Billie",
+    songs: [
+        { title: "Nothing Can Separate", path: "./audio/Season1/Billie/01_NothingCanSeparate.mp3" }
+    ]
+};
+
+// Function to generate blocks
 // Function to generate blocks
 function createArtistBlock(artist, seasonId) {
     const subclusters = document.getElementById(seasonId);
@@ -106,6 +114,7 @@ function createArtistBlock(artist, seasonId) {
         const title = document.createElement("div");
         title.className = "song-title";
         title.textContent = song.title;
+        title.setAttribute("data-full-title", song.title); // Add full title as data attribute for tooltip
         songBlock.appendChild(title);
 
         const links = document.createElement("div");
@@ -132,7 +141,7 @@ function createArtistBlock(artist, seasonId) {
 
 // Generate Season 1
 document.addEventListener("DOMContentLoaded", function() {
-    [Daisy1, Meadowlark1, Sarge1, Sivle1].forEach(artist => createArtistBlock(artist, "season1"));
+    [Daisy1, Meadowlark1, Sarge1, Sivle1, Billie1].forEach(artist => createArtistBlock(artist, "season1"));
     
     // Initialize audio player and event listeners
     const mainAudio = document.getElementById("mainAudio");
@@ -142,6 +151,12 @@ document.addEventListener("DOMContentLoaded", function() {
         // Handle play button clicks
         if (e.target.matches("[data-audio]")) {
             e.preventDefault();
+
+            // Skip analytics for placeholder songs
+            if (e.target.dataset.audio === "#") {
+                console.log('Placeholder song - not playing');
+                return;
+            }
 
             // Get filename for tracking
             const audioPath = e.target.dataset.audio;
@@ -168,6 +183,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Handle download clicks
         if (e.target.matches("a[download]")) {
+            // Skip analytics and download for placeholder songs
+            if (e.target.href === "#" || e.target.href.endsWith("#")) {
+                e.preventDefault();
+                console.log('Placeholder song - not downloading');
+                return;
+            }
+
             const fileName = e.target.href.split('/').pop();
             console.log('Tracking download:', fileName);
 
