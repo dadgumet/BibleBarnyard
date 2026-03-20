@@ -128,16 +128,16 @@ video {
 .subclusters {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    gap: 12px;
+    justify-content: flex-start;
 }
 
 .subcluster {
-    flex: 0 1 180px;
-    min-width: 160px;
-    max-width: 200px;
+    flex: 1 1 200px;
+    min-width: 190px;
+    max-width: 260px;
     background: #f9f9f9;
-    padding: 12px;
+    padding: 8px;
     border-radius: 6px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     text-align: left;
@@ -153,70 +153,51 @@ video {
     }
 
 /* Song/Video blocks */
-.song-block {
+.song-block, .video-block {
     background: var(--song-bg);
-    padding: 8px;
+    padding: 5px 8px;
     border-radius: 6px;
-    margin-bottom: 8px;
-    position: relative;
-}
-
-.song-title {
-    font-weight: bold;
     margin-bottom: 4px;
-    font-size: 0.9em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: default;
-}
-
-/* Tooltip styling for song titles */
-.song-title:hover {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
 }
 
-.song-title:hover::after {
-    content: attr(data-full-title);
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background: var(--secondary);
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    pointer-events: none;
-    font-weight: normal;
-    margin-top: 4px;
-    border: 1px solid rgba(255,255,255,0.2);
+.video-block-alt {
+    background: #dce8f7;
 }
 
-/* Add a small arrow to the tooltip */
-.song-title:hover::before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    top: 100%;
-    margin-top: -2px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent var(--secondary) transparent;
-    z-index: 1001;
-    pointer-events: none;
+.video-block:hover, .video-block-alt:hover {
+    background: #c8d8ed;
+    transition: background 0.15s ease;
 }
 
-.song-links {
+.song-title, .video-title {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 0.85em;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    cursor: default;
+    flex: 1;
+    color: var(--dark);
+    line-height: 1.3;
+}
+
+/* Titles are fully visible, no tooltip needed */
+
+.song-links, .video-links {
     display: flex;
     flex-wrap: nowrap;
-    gap: 8px;
-    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-    .song-links a {
+    .song-links a, .video-links a {
         text-decoration: none;
         color: var(--secondary);
         font-weight: 600;
@@ -224,11 +205,27 @@ video {
         font-size: 0.8em;
         padding: 2px 4px;
         transition: color 0.2s ease;
+        display: flex;
+        align-items: center;
     }
 
-        .song-links a:hover {
+        .song-links a:hover, .video-links a:hover {
             color: var(--accent);
         }
+
+.icon-btn {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    opacity: 0.82;
+}
+
+.video-links a:hover .icon-btn {
+    transform: scale(1.15);
+    opacity: 1;
+}
 
 /* Footer */ footer {
     background-color: var(--secondary);
@@ -300,9 +297,10 @@ section {
     }
 
 .viewed {
-    color: green;
+    color: #27ae60;
     font-weight: bold;
-    margin-left: 6px;
+    margin-left: 4px;
+    font-size: 0.95em;
 }
 
 .reset-btn {
@@ -465,16 +463,12 @@ main {
 /* Responsive adjustments */
 @media (max-width: 1100px) {
     .subcluster {
-        flex: 0 1 160px;
-        min-width: 140px;
+        flex: 1 1 180px;
+        min-width: 170px;
     }
     
-    .song-title {
-        font-size: 0.8em;
-    }
-    
-    .song-links a {
-        font-size: 0.7em;
+    .song-title, .video-title {
+        font-size: 0.82em;
     }
 }
 
@@ -484,7 +478,8 @@ main {
     }
     
     .subcluster {
-        flex: 0 1 180px;
+        flex: 1 1 180px;
+        max-width: none;
     }
 }
 

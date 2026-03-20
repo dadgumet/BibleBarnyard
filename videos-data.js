@@ -142,8 +142,8 @@ function buildVideoInterface() {
                     subcatHeader.textContent = `${subcat.emoji} ${subcatName}`;
                     subclusterDiv.appendChild(subcatHeader);
 
-                    subcat.videos.forEach(video => {
-                        subclusterDiv.appendChild(createVideoBlock(video));
+                    subcat.videos.forEach((video, i) => {
+                        subclusterDiv.appendChild(createVideoBlock(video, i));
                     });
                 }
             }
@@ -153,8 +153,8 @@ function buildVideoInterface() {
                 categoryHeader.textContent = `${category.emoji} ${categoryName}`;
                 subclusterDiv.appendChild(categoryHeader);
 
-                category.videos.forEach(video => {
-                    subclusterDiv.appendChild(createVideoBlock(video));
+                category.videos.forEach((video, i) => {
+                    subclusterDiv.appendChild(createVideoBlock(video, i));
                 });
             }
 
@@ -166,10 +166,13 @@ function buildVideoInterface() {
     }
 }
 
+// Track row index per subcluster for alternating colors
+let _rowIndex = 0;
+
 // Helper function to create a video block
-function createVideoBlock(video) {
+function createVideoBlock(video, rowIndex) {
     const videoBlock = document.createElement('div');
-    videoBlock.className = 'video-block';
+    videoBlock.className = 'video-block' + (rowIndex % 2 === 1 ? ' video-block-alt' : '');
 
     const videoTitle = document.createElement('div');
     videoTitle.className = 'video-title';
@@ -181,12 +184,24 @@ function createVideoBlock(video) {
     const playLink = document.createElement('a');
     playLink.href = '#';
     playLink.setAttribute('data-video', video.id);
-    playLink.textContent = '▶️ Play';
+    playLink.title = 'Play';
+
+    const playImg = document.createElement('img');
+    playImg.src = '/images/play.png';
+    playImg.alt = 'Play';
+    playImg.className = 'icon-btn';
+    playLink.appendChild(playImg);
 
     const downloadLink = document.createElement('a');
     downloadLink.href = video.download;
     downloadLink.setAttribute('download', '');
-    downloadLink.textContent = '⬇️ Download';
+    downloadLink.title = 'Download';
+
+    const downloadImg = document.createElement('img');
+    downloadImg.src = '/images/download.png';
+    downloadImg.alt = 'Download';
+    downloadImg.className = 'icon-btn';
+    downloadLink.appendChild(downloadImg);
 
     videoLinks.appendChild(playLink);
     videoLinks.appendChild(downloadLink);
