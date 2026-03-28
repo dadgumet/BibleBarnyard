@@ -91,7 +91,9 @@ const Sivle1 = {
 const Billie1 = {
     name: "Billie",
     songs: [
-        { title: "Nothing Can Separate", path: "./audio/Season1/Billie/01_NothingCanSeparate.mp3" }
+        { title: "Nothing Can Separate", path: "./audio/Season1/Billie/01_NothingCanSeparate.mp3" },
+        { title: "Woulda Coulda Shoulda", path: "./audio/Season1/Billie/02_Woulda_Coulda_Shoulda.mp3" },
+        { title: "Gonna Tell The Truth", path: "./audio/Season1/Billie/03_Gonna_Tell_The_Truth.mp3" }
     ]
 };
 
