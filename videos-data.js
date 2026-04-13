@@ -1,8 +1,11 @@
 // Video data structure
 const videosData = {
-    'Season 1': {
-        emoji: '🌱',
-        categories: {
+    'Bible Barnyard': {
+        emoji: '🌾',
+        seasons: {
+            'Season 1': {
+                emoji: '🌱',
+                categories: {
             'Love': {
                 emoji: '❤️',
                 videos: [
@@ -76,30 +79,97 @@ const videosData = {
                 }
             }
         }
+            } //,
+            // 'Season 2': {
+            //     emoji: '🌿',
+            //     categories: {
+            //         // Season 2 categories will go here
+            //     }
+            // },
+            // 'Season 3': {
+            //     emoji: '🍃',
+            //     categories: {
+            //         // Season 3 categories will go here
+            //     }
+            // }
+        }
+    },
+    'Specials': {
+        emoji: '👻',
+        categories: {
+            'Mini Series': {
+                emoji: '🎬',
+                subcategories: {
+                    'Hollow Weenie': {
+                        emoji: '🎃',
+                        videos: [
+                            { id: 'hollow1', title: 'Hollow Weenie Act 1', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act1_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act1_d.mp4' } //,
+                            // { id: 'hollow2', title: 'Hollow Weenie Act 2', stream: '', download: '' },
+                            // { id: 'hollow3', title: 'Hollow Weenie Act 3', stream: '', download: '' },
+                            // { id: 'hollow4', title: 'Hollow Weenie Act 4', stream: '', download: '' }
+                        ]
+                    }
+                }
+            }
+        }
     }
 };
 
 // Generate video map for quick lookups
 function generateVideoMap() {
     const map = {};
-    for (const season in videosData) {
-        const categories = videosData[season].categories;
-        for (const category in categories) {
-            const cat = categories[category];
+    
+    for (const tabName in videosData) {
+        const tab = videosData[tabName];
+        
+        // Handle Bible Barnyard tab with seasons
+        if (tab.seasons) {
+            for (const seasonName in tab.seasons) {
+                const season = tab.seasons[seasonName];
+                const categories = season.categories;
+                
+                for (const category in categories) {
+                    const cat = categories[category];
 
-            // Handle regular categories with videos
-            if (cat.videos) {
-                cat.videos.forEach(video => {
-                    map[video.id] = video.stream;
-                });
+                    // Handle regular categories with videos
+                    if (cat.videos) {
+                        cat.videos.forEach(video => {
+                            map[video.id] = video.stream;
+                        });
+                    }
+
+                    // Handle categories with subcategories
+                    if (cat.subcategories) {
+                        for (const subcat in cat.subcategories) {
+                            cat.subcategories[subcat].videos.forEach(video => {
+                                map[video.id] = video.stream;
+                            });
+                        }
+                    }
+                }
             }
+        }
+        
+        // Handle Specials tab with direct categories
+        if (tab.categories) {
+            const categories = tab.categories;
+            for (const category in categories) {
+                const cat = categories[category];
 
-            // Handle categories with subcategories
-            if (cat.subcategories) {
-                for (const subcat in cat.subcategories) {
-                    cat.subcategories[subcat].videos.forEach(video => {
+                // Handle regular categories with videos
+                if (cat.videos) {
+                    cat.videos.forEach(video => {
                         map[video.id] = video.stream;
                     });
+                }
+
+                // Handle categories with subcategories
+                if (cat.subcategories) {
+                    for (const subcat in cat.subcategories) {
+                        cat.subcategories[subcat].videos.forEach(video => {
+                            map[video.id] = video.stream;
+                        });
+                    }
                 }
             }
         }

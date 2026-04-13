@@ -229,6 +229,49 @@
         .video-block.now-playing .video-title {
             color: #0d47a1;
         }
+
+        /* ── Tab styling ── */
+        .tabs-container {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0 30px 0;
+            border-bottom: 2px solid #e0e8f5;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            background: #f5f7fa;
+            border: 2px solid #e0e8f5;
+            border-bottom: none;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .tab-btn:hover {
+            background: #e8ecf2;
+            border-color: #cdd6e5;
+        }
+
+        .tab-btn.active {
+            background: white;
+            border-color: #1a73e8;
+            color: #1a73e8;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
     </style>
 </head>
 
@@ -295,8 +338,14 @@
             <span class="reset-note">✔️ means you've already watched that video</span>
         </div>
 
-        <div class="clusters">
-            <!-- Videos will be dynamically generated here -->
+        <!-- Tab Navigation -->
+        <div class="tabs-container" id="tabsContainer">
+            <!-- Tabs will be generated here -->
+        </div>
+
+        <!-- Tab Contents -->
+        <div id="tabContents">
+            <!-- Tab content will be generated here -->
         </div>
     </main>
 
@@ -314,10 +363,31 @@
 
         function buildFlatVideoList() {
             videoList = [];
-            for (const seasonName in videosData) {
-                const season = videosData[seasonName];
-                for (const catName in season.categories) {
-                    const cat = season.categories[catName];
+            const tab = videosData[currentTab];
+            if (!tab) return;
+
+            // Handle Bible Barnyard tab with seasons
+            if (tab.seasons) {
+                for (const seasonName in tab.seasons) {
+                    const season = tab.seasons[seasonName];
+                    for (const catName in season.categories) {
+                        const cat = season.categories[catName];
+                        if (cat.videos) {
+                            cat.videos.forEach(v => videoList.push(v));
+                        }
+                        if (cat.subcategories) {
+                            for (const subcatName in cat.subcategories) {
+                                cat.subcategories[subcatName].videos.forEach(v => videoList.push(v));
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Handle Specials tab with direct categories
+            if (tab.categories) {
+                for (const catName in tab.categories) {
+                    const cat = tab.categories[catName];
                     if (cat.videos) {
                         cat.videos.forEach(v => videoList.push(v));
                     }
@@ -347,6 +417,7 @@
         let currentVideoId = null;
         let countdownTimer = null;
         let countdownInterval = null;
+        let currentTab    = 'Season 1';  // Track active tab
         const COUNTDOWN_SECS = 5;
 
         // ── Binge Watch toggle ───────────────────────────────────────────────
@@ -504,10 +575,159 @@
             });
         }
 
+        // ── Build tabs ───────────────────────────────────────────────────────
+        function buildTabs() {
+            const tabsContainer = document.getElementById('tabsContainer');
+            tabsContainer.innerHTML = '';
+
+            for (const tabName in videosData) {
+                const btn = document.createElement('button');
+                btn.className = 'tab-btn';
+                btn.textContent = tabName;
+                btn.addEventListener('click', () => switchTab(tabName));
+                tabsContainer.appendChild(btn);
+            }
+        }
+
+        // ── Switch tabs ──────────────────────────────────────────────────────
+        function switchTab(tabName) {
+            currentTab = tabName;
+
+            // Update tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent === tabName);
+            });
+
+            // Rebuild video list and interface for this tab
+            buildFlatVideoList();
+            buildVideoInterface();
+        }
+
+        // ── Build video interface (updated for tabs) ────────────────────────
+        function buildVideoInterface() {
+            const tabContents = document.getElementById('tabContents');
+            tabContents.innerHTML = '';
+
+            const tab = videosData[currentTab];
+            if (!tab) return;
+
+            const clustersDiv = document.createElement('div');
+            clustersDiv.className = 'clusters';
+
+            // Handle Bible Barnyard tab with seasons
+            if (tab.seasons) {
+                for (const seasonName in tab.seasons) {
+                    const season = tab.seasons[seasonName];
+
+                    const clusterDiv = document.createElement('div');
+                    clusterDiv.className = 'cluster';
+
+                    const seasonHeader = document.createElement('h3');
+                    seasonHeader.textContent = `${season.emoji} ${seasonName}`;
+                    clusterDiv.appendChild(seasonHeader);
+
+                    const subclustersDiv = document.createElement('div');
+                    subclustersDiv.className = 'subclusters';
+
+                    for (const categoryName in season.categories) {
+                        const category = season.categories[categoryName];
+
+                        const subclusterDiv = document.createElement('div');
+                        subclusterDiv.className = 'subcluster';
+
+                        // Handle categories with subcategories (like Joy & Parents)
+                        if (category.subcategories) {
+                            for (const subcatName in category.subcategories) {
+                                const subcat = category.subcategories[subcatName];
+
+                                const subcatHeader = document.createElement('h4');
+                                subcatHeader.textContent = `${subcat.emoji} ${subcatName}`;
+                                subclusterDiv.appendChild(subcatHeader);
+
+                                subcat.videos.forEach((video, i) => {
+                                    subclusterDiv.appendChild(createVideoBlock(video, i));
+                                });
+                            }
+                        }
+                        // Handle regular categories with videos
+                        else if (category.videos) {
+                            const categoryHeader = document.createElement('h4');
+                            categoryHeader.textContent = `${category.emoji} ${categoryName}`;
+                            subclusterDiv.appendChild(categoryHeader);
+
+                            category.videos.forEach((video, i) => {
+                                subclusterDiv.appendChild(createVideoBlock(video, i));
+                            });
+                        }
+
+                        subclustersDiv.appendChild(subclusterDiv);
+                    }
+
+                    clusterDiv.appendChild(subclustersDiv);
+                    clustersDiv.appendChild(clusterDiv);
+                }
+            }
+
+            // Handle Specials tab with direct categories
+            if (tab.categories) {
+                const clusterDiv = document.createElement('div');
+                clusterDiv.className = 'cluster';
+
+                const tabHeader = document.createElement('h3');
+                tabHeader.textContent = `${tab.emoji} ${currentTab}`;
+                clusterDiv.appendChild(tabHeader);
+
+                const subclustersDiv = document.createElement('div');
+                subclustersDiv.className = 'subclusters';
+
+                for (const categoryName in tab.categories) {
+                    const category = tab.categories[categoryName];
+
+                    const subclusterDiv = document.createElement('div');
+                    subclusterDiv.className = 'subcluster';
+
+                    // Handle categories with subcategories (like Mini Series)
+                    if (category.subcategories) {
+                        for (const subcatName in category.subcategories) {
+                            const subcat = category.subcategories[subcatName];
+
+                            const subcatHeader = document.createElement('h4');
+                            subcatHeader.textContent = `${subcat.emoji} ${subcatName}`;
+                            subclusterDiv.appendChild(subcatHeader);
+
+                            subcat.videos.forEach((video, i) => {
+                                subclusterDiv.appendChild(createVideoBlock(video, i));
+                            });
+                        }
+                    }
+                    // Handle regular categories with videos
+                    else if (category.videos) {
+                        const categoryHeader = document.createElement('h4');
+                        categoryHeader.textContent = `${category.emoji} ${categoryName}`;
+                        subclusterDiv.appendChild(categoryHeader);
+
+                        category.videos.forEach((video, i) => {
+                            subclusterDiv.appendChild(createVideoBlock(video, i));
+                        });
+                    }
+
+                    subclustersDiv.appendChild(subclusterDiv);
+                }
+
+                clusterDiv.appendChild(subclustersDiv);
+                clustersDiv.appendChild(clusterDiv);
+            }
+
+            tabContents.appendChild(clustersDiv);
+
+            // Re-attach listeners and update viewed icons
+            attachVideoListeners();
+            updateViewedIcons();
+        }
+
         // ── Boot ─────────────────────────────────────────────────────────────
-        buildFlatVideoList();
-        buildVideoInterface();
-        attachVideoListeners();
+        buildTabs();
+        switchTab('Bible Barnyard');
 
         const urlParams = new URLSearchParams(window.location.search);
         const videoId   = urlParams.get('v');
