@@ -93,7 +93,8 @@ const Billie1 = {
     songs: [
         { title: "Nothing Can Separate", path: "./audio/Season1/Billie/01_NothingCanSeparate.mp3" },
         { title: "Woulda Coulda Shoulda", path: "./audio/Season1/Billie/02_Woulda_Coulda_Shoulda.mp3" },
-        { title: "Gonna Tell The Truth", path: "./audio/Season1/Billie/03_Gonna_Tell_The_Truth.mp3" }
+        { title: "Gonna Tell The Truth", path: "./audio/Season1/Billie/03_Gonna_Tell_The_Truth.mp3" },
+        { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" }
     ]
 };
 
