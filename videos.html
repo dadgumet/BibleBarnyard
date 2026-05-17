@@ -300,6 +300,42 @@
             margin: 0;
             max-width: 620px;
         }
+
+        /* ── 3-column grid layout for season categories ── */
+        .subclusters-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0 16px;
+            align-items: start;
+        }
+
+        .subclusters-col {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        @media (max-width: 900px) {
+            .subclusters-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .subclusters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ── Episode & Bible book metadata under category title ── */
+        .category-meta {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            color: #666;
+            margin: -6px 0 8px 0;
+            padding: 0 4px;
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -366,11 +402,6 @@
             <span class="reset-note">✔️ means you've already watched that video</span>
         </div>
 
-        <!-- <div class="status-card">
-            <img src="/images/redo.png" alt="Redo status icon" />
-            <p>Done through Why Bad Things Happen 2 of 4. Currently working on Why Bad Things Happen 3 of 4.</p>
-        </div> -->
-
         <!-- Tab Navigation -->
         <div class="tabs-container" id="tabsContainer">
             <!-- Tabs will be generated here -->
@@ -403,8 +434,16 @@
             if (tab.seasons) {
                 for (const seasonName in tab.seasons) {
                     const season = tab.seasons[seasonName];
-                    for (const catName in season.categories) {
+                    // Use gridLayout order if present, otherwise fall back to category key order
+                    let categoryOrder;
+                    if (season.gridLayout) {
+                        categoryOrder = season.gridLayout.flat();
+                    } else {
+                        categoryOrder = Object.keys(season.categories);
+                    }
+                    categoryOrder.forEach(catName => {
                         const cat = season.categories[catName];
+                        if (!cat) return;
                         if (cat.videos) {
                             cat.videos.forEach(v => videoList.push(v));
                         }
@@ -413,7 +452,7 @@
                                 cat.subcategories[subcatName].videos.forEach(v => videoList.push(v));
                             }
                         }
-                    }
+                    });
                 }
             }
 
@@ -660,44 +699,40 @@
                     seasonHeader.textContent = `${season.emoji} ${seasonName}`;
                     clusterDiv.appendChild(seasonHeader);
 
-                    const subclustersDiv = document.createElement('div');
-                    subclustersDiv.className = 'subclusters';
+                    // Use gridLayout if present to arrange categories into columns
+                    if (season.gridLayout) {
+                        const gridDiv = document.createElement('div');
+                        gridDiv.className = 'subclusters-grid';
 
-                    for (const categoryName in season.categories) {
-                        const category = season.categories[categoryName];
+                        season.gridLayout.forEach(columnCats => {
+                            const colDiv = document.createElement('div');
+                            colDiv.className = 'subclusters-col';
 
-                        const subclusterDiv = document.createElement('div');
-                        subclusterDiv.className = 'subcluster';
+                            columnCats.forEach(categoryName => {
+                                const category = season.categories[categoryName];
+                                if (!category) return;
 
-                        // Handle categories with subcategories (like Joy & Parents)
-                        if (category.subcategories) {
-                            for (const subcatName in category.subcategories) {
-                                const subcat = category.subcategories[subcatName];
-
-                                const subcatHeader = document.createElement('h4');
-                                subcatHeader.textContent = `${subcat.emoji} ${subcatName}`;
-                                subclusterDiv.appendChild(subcatHeader);
-
-                                subcat.videos.forEach((video, i) => {
-                                    subclusterDiv.appendChild(createVideoBlock(video, i));
-                                });
-                            }
-                        }
-                        // Handle regular categories with videos
-                        else if (category.videos) {
-                            const categoryHeader = document.createElement('h4');
-                            categoryHeader.textContent = `${category.emoji} ${categoryName}`;
-                            subclusterDiv.appendChild(categoryHeader);
-
-                            category.videos.forEach((video, i) => {
-                                subclusterDiv.appendChild(createVideoBlock(video, i));
+                                const subclusterDiv = buildCategoryBlock(categoryName, category);
+                                colDiv.appendChild(subclusterDiv);
                             });
+
+                            gridDiv.appendChild(colDiv);
+                        });
+
+                        clusterDiv.appendChild(gridDiv);
+                    } else {
+                        // Fallback: flat subclusters row
+                        const subclustersDiv = document.createElement('div');
+                        subclustersDiv.className = 'subclusters';
+
+                        for (const categoryName in season.categories) {
+                            const category = season.categories[categoryName];
+                            subclustersDiv.appendChild(buildCategoryBlock(categoryName, category));
                         }
 
-                        subclustersDiv.appendChild(subclusterDiv);
+                        clusterDiv.appendChild(subclustersDiv);
                     }
 
-                    clusterDiv.appendChild(subclustersDiv);
                     clustersDiv.appendChild(clusterDiv);
                 }
             }
@@ -716,36 +751,7 @@
 
                 for (const categoryName in tab.categories) {
                     const category = tab.categories[categoryName];
-
-                    const subclusterDiv = document.createElement('div');
-                    subclusterDiv.className = 'subcluster';
-
-                    // Handle categories with subcategories (like Mini Series)
-                    if (category.subcategories) {
-                        for (const subcatName in category.subcategories) {
-                            const subcat = category.subcategories[subcatName];
-
-                            const subcatHeader = document.createElement('h4');
-                            subcatHeader.textContent = `${subcat.emoji} ${subcatName}`;
-                            subclusterDiv.appendChild(subcatHeader);
-
-                            subcat.videos.forEach((video, i) => {
-                                subclusterDiv.appendChild(createVideoBlock(video, i));
-                            });
-                        }
-                    }
-                    // Handle regular categories with videos
-                    else if (category.videos) {
-                        const categoryHeader = document.createElement('h4');
-                        categoryHeader.textContent = `${category.emoji} ${categoryName}`;
-                        subclusterDiv.appendChild(categoryHeader);
-
-                        category.videos.forEach((video, i) => {
-                            subclusterDiv.appendChild(createVideoBlock(video, i));
-                        });
-                    }
-
-                    subclustersDiv.appendChild(subclusterDiv);
+                    subclustersDiv.appendChild(buildCategoryBlock(categoryName, category));
                 }
 
                 clusterDiv.appendChild(subclustersDiv);
@@ -757,6 +763,50 @@
             // Re-attach listeners and update viewed icons
             attachVideoListeners();
             updateViewedIcons();
+        }
+
+        // ── Build a single category block ────────────────────────────────────
+        function buildCategoryBlock(categoryName, category) {
+            const subclusterDiv = document.createElement('div');
+            subclusterDiv.className = 'subcluster';
+
+            // Handle categories with subcategories (legacy / Specials)
+            if (category.subcategories) {
+                for (const subcatName in category.subcategories) {
+                    const subcat = category.subcategories[subcatName];
+
+                    const subcatHeader = document.createElement('h4');
+                    subcatHeader.textContent = `${subcat.emoji} ${subcatName}`;
+                    subclusterDiv.appendChild(subcatHeader);
+
+                    subcat.videos.forEach((video, i) => {
+                        subclusterDiv.appendChild(createVideoBlock(video, i));
+                    });
+                }
+            }
+            // Handle regular categories with videos
+            else if (category.videos) {
+                const categoryHeader = document.createElement('h4');
+                categoryHeader.textContent = `${category.emoji} ${categoryName}`;
+                subclusterDiv.appendChild(categoryHeader);
+
+                // Show episodes and Bible books if present
+                if (category.episodes || category.bibleBooks) {
+                    const metaDiv = document.createElement('div');
+                    metaDiv.className = 'category-meta';
+                    const parts = [];
+                    if (category.episodes)   parts.push(category.episodes);
+                    if (category.bibleBooks) parts.push(category.bibleBooks);
+                    metaDiv.textContent = parts.join(' · ');
+                    subclusterDiv.appendChild(metaDiv);
+                }
+
+                category.videos.forEach((video, i) => {
+                    subclusterDiv.appendChild(createVideoBlock(video, i));
+                });
+            }
+
+            return subclusterDiv;
         }
 
         // ── Boot ─────────────────────────────────────────────────────────────

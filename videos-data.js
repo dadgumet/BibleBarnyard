@@ -5,9 +5,18 @@ const videosData = {
         seasons: {
             'Season 1': {
                 emoji: '🌱',
+                // gridLayout defines how categories are arranged in columns.
+                // Each inner array is one column; values are category keys.
+                gridLayout: [
+                    ['Love', 'Truth'],
+                    ['Joy', 'Parents', 'Lying', 'Why Bad Things Happen'],
+                    ['Kindness']
+                ],
                 categories: {
             'Love': {
                 emoji: '❤️',
+                episodes: 'Episodes 1-8',
+                bibleBooks: 'Genesis–Numbers',
                 videos: [
                     { id: 'love1', title: 'Love 1 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A01ALove_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A01ALove_d.mp4' },
                     { id: 'love2', title: 'Love 2 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A01BLove_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A01BLove_d.mp4' },
@@ -21,6 +30,8 @@ const videosData = {
             },
             'Truth': {
                 emoji: '✨',
+                episodes: 'Episodes 9-16',
+                bibleBooks: 'Leviticus–Joshua',
                 videos: [
                     { id: 'truth1', title: 'Truth 1 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A05ATruth_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A05ATruth_d.mp4' },
                     { id: 'truth2', title: 'Truth 2 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A05BTruth_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A05BTruth_d.mp4' },
@@ -32,51 +43,64 @@ const videosData = {
                     { id: 'truth8', title: 'Truth 8 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A08BTruth_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A08BTruth_d.mp4' }
                 ]
             },
-            'Joy & Parents': {
+            'Joy': {
                 emoji: '😊',
-                subcategories: {
-                    'Joy': {
-                        emoji: '😊',
-                        videos: [
-                            { id: 'joy1', title: 'Joy 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A09AJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A09AJoy_d.mp4' },
-                            { id: 'joy2', title: 'Joy 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A09BJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A09BJoy_d.mp4' },
-                            { id: 'joy3', title: 'Joy 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A10AJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A10AJoy_d.mp4' },
-                            { id: 'joy4', title: 'Joy 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A10BJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A10BJoy_d.mp4' }
-                        ]
-                    },
-                    'Parents': {
-                        emoji: '👨‍👩‍👧‍👦',
-                        videos: [
-                            { id: 'parents1', title: 'Parents 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A11AParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A11AParents_d.mp4' },
-                            { id: 'parents2', title: 'Parents 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A11BParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A11BParents_d.mp4' },
-                            { id: 'parents3', title: 'Parents 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A12AParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A12AParents_d.mp4' },
-                            { id: 'parents4', title: 'Parents 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A12BParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A12BParents_d.mp4' }
-                        ]
-                    }
-                }
+                episodes: 'Episodes 17-20',
+                bibleBooks: 'Judges',
+                videos: [
+                    { id: 'joy1', title: 'Joy 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A09AJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A09AJoy_d.mp4' },
+                    { id: 'joy2', title: 'Joy 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A09BJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A09BJoy_d.mp4' },
+                    { id: 'joy3', title: 'Joy 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A10AJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A10AJoy_d.mp4' },
+                    { id: 'joy4', title: 'Joy 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A10BJoy_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A10BJoy_d.mp4' }
+                ]
             },
-            'Lying & Why Bad Things Happen': {
+            'Parents': {
+                emoji: '👨‍👩‍👧‍👦',
+                episodes: 'Episodes 21-24',
+                bibleBooks: 'Judges–Ruth',
+                videos: [
+                    { id: 'parents1', title: 'Parents 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A11AParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A11AParents_d.mp4' },
+                    { id: 'parents2', title: 'Parents 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A11BParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A11BParents_d.mp4' },
+                    { id: 'parents3', title: 'Parents 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A12AParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A12AParents_d.mp4' },
+                    { id: 'parents4', title: 'Parents 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A12BParents_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A12BParents_d.mp4' }
+                ]
+            },
+            'Lying': {
                 emoji: '🤥',
-                subcategories: {
-                    'Lying': {
-                        emoji: '🤥',
-                        videos: [
-                            { id: 'lying1', title: 'Lying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4' },
-                            { id: 'lying2', title: 'Lying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13BLying_d.mp4' },
-                            { id: 'lying3', title: 'Lying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14ALying_d.mp4' },
-                            { id: 'lying4', title: 'Lying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14BLying_d.mp4' }
-                        ]
-                    },
-                    'Why Bad Things Happen': {
-                        emoji: '❓',
-                        videos: [
-                            { id: 'whybad1', title: 'Why Bad Things Happen 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A15ABadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A15ABadThings_d.mp4' },
-                            { id: 'whybad2', title: 'Why Bad Things Happen 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A15BBadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A15BBadThings_d.mp4' },
-                            { id: 'whybad3', title: 'Why Bad Things Happen 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A16ABadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A16ABadThings_d.mp4' },
-                            { id: 'whybad4', title: 'Why Bad Things Happen 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A16BBadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A16BBadThings_d.mp4' }
-                        ]
-                    }
-                }
+                episodes: 'Episodes 25-28',
+                bibleBooks: 'Ruth',
+                videos: [
+                    { id: 'lying1', title: 'Lying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13ALying_d.mp4' },
+                    { id: 'lying2', title: 'Lying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A13BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A13BLying_d.mp4' },
+                    { id: 'lying3', title: 'Lying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14ALying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14ALying_d.mp4' },
+                    { id: 'lying4', title: 'Lying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A14BLying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A14BLying_d.mp4' }
+                ]
+            },
+            'Why Bad Things Happen': {
+                emoji: '❓',
+                episodes: 'Episodes 29-32',
+                bibleBooks: '1st and 2nd Samuel',
+                videos: [
+                    { id: 'whybad1', title: 'Why Bad Things Happen 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A15ABadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A15ABadThings_d.mp4' },
+                    { id: 'whybad2', title: 'Why Bad Things Happen 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A15BBadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A15BBadThings_d.mp4' },
+                    { id: 'whybad3', title: 'Why Bad Things Happen 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A16ABadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A16ABadThings_d.mp4' },
+                    { id: 'whybad4', title: 'Why Bad Things Happen 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A16BBadThings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A16BBadThings_d.mp4' }
+                ]
+            },
+            'Kindness': {
+                emoji: '🤝',
+                episodes: 'Episodes 33-40',
+                bibleBooks: '2nd Samuel–1st Kings',
+                videos: [
+                    { id: 'kindness1', title: 'Kindness 1 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17AKindness_d.mp4' },
+                    // { id: 'kindness2', title: 'Kindness 2 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17BKindness_d.mp4' },
+                    // { id: 'kindness3', title: 'Kindness 3 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A18AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A18AKindness_d.mp4' },
+                    // { id: 'kindness4', title: 'Kindness 4 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A18BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A18BKindness_d.mp4' },
+                    // { id: 'kindness5', title: 'Kindness 5 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A19AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19AKindness_d.mp4' },
+                    // { id: 'kindness6', title: 'Kindness 6 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A19BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19BKindness_d.mp4' },
+                    // { id: 'kindness7', title: 'Kindness 7 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A20AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20AKindness_d.mp4' },
+                    // { id: 'kindness8', title: 'Kindness 8 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A20BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20BKindness_d.mp4' }
+                ]
             }
         }
             } //,

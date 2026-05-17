@@ -25,7 +25,8 @@ const Daisy1 = {
         { title: "Melvin the Gopher", path: "./audio/Season1/Daisy/13_MelvintheGopher.mp3" },
         { title: "Keep Your Tongue From Evil", path: "./audio/Season1/Daisy/14_KeepYourTongueFromEvil.mp3" },
         { title: "Why Bad Things Happen", path: "./audio/Season1/Daisy/15_WhyBadThingsHappen.mp3" },
-        { title: "Tommorrow", path: "./audio/Season1/Daisy/16_DaisyTommorrow.mp3" }                
+        { title: "Tommorrow", path: "./audio/Season1/Daisy/16_DaisyTommorrow.mp3" },
+        { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" }                                
     ]
 };
 
@@ -46,7 +47,8 @@ const Meadowlark1 = {
         { title: "1st Samuel 7", path: "./audio/Season1/Meadowlark/13_1stSamuel7.mp3" },
         { title: "Does God Still Love Me", path: "./audio/Season1/Meadowlark/14_DoesGodStillLoveMe.mp3" },
         { title: "We Broke the World", path: "./audio/Season1/Meadowlark/15_WeBroketheWorld.mp3" },
-        { title: "Never Say Never", path: "./audio/Season1/Meadowlark/16_NeverSayNever.mp3" }
+        { title: "Never Say Never", path: "./audio/Season1/Meadowlark/16_NeverSayNever.mp3" },
+        { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" }
     ]
 };    
 
@@ -66,7 +68,8 @@ const Sarge1 = {
         { title: "P-A-R-E-N-T-S", path: "./audio/Season1/Sarge/11_PARENTS.mp3" },
         { title: "Tell No Lies", path: "./audio/Season1/Sarge/13_TellNoLies.mp3" },
         { title: "David Wasn't Perfect", path: "./audio/Season1/Sarge/14_DavidWasntPerfect.mp3" },
-        { title: "How Could God Let That Be", path: "./audio/Season1/Sarge/15_HowCouldGodLetThatBe.mp3" }
+        { title: "How Could God Let That Be", path: "./audio/Season1/Sarge/15_HowCouldGodLetThatBe.mp3" },
+        { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" }
     ]
 };
 
@@ -84,7 +87,8 @@ const Sivle1 = {
         { title: "David and Goliath", path: "./audio/Season1/Sivle/12_DavidAndGoliath.mp3" },
         { title: "Six Yet Seven", path: "./audio/Season1/Sivle/13_SixYetSeven.mp3" },
         { title: "Sweet To Stones", path: "./audio/Season1/Sivle/14_SweetToStones.mp3" },
-        { title: "Bad vs Good", path: "./audio/Season1/Sivle/15_BadVsGood.mp3" }
+        { title: "Bad vs Good", path: "./audio/Season1/Sivle/15_BadVsGood.mp3" },
+        { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" }
     ]
 };
 
@@ -94,7 +98,14 @@ const Billie1 = {
         { title: "Nothing Can Separate", path: "./audio/Season1/Billie/01_NothingCanSeparate.mp3" },
         { title: "Woulda Coulda Shoulda", path: "./audio/Season1/Billie/02_Woulda_Coulda_Shoulda.mp3" },
         { title: "Gonna Tell The Truth", path: "./audio/Season1/Billie/03_Gonna_Tell_The_Truth.mp3" },
-        { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" }
+        { title: "L Y I N G", path: "./audio/Season1/Billie/13_LYING.mp3" },
+        { title: "Briar and Booth", path: "./audio/Season1/Billie/14_BriarAndBooth.mp3" },
+        { title: "Bad Is Good", path: "./audio/Season1/Billie/15_BadIsGood.mp3" },
+        { title: "Sticks and Stones", path: "./audio/Season1/Billie/16_SticksAndStones.mp3" },
+        { title: "Oh Brother", path: "./audio/Season1/Billie/17_OhBrother.mp3" },
+        // { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" },
+        // { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" },
+        // { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" }
     ]
 };
 
