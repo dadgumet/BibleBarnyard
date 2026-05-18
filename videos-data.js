@@ -93,7 +93,7 @@ const videosData = {
                 bibleBooks: '2nd Samuel–1st Kings',
                 videos: [
                     { id: 'kindness1', title: 'Kindness 1 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17AKindness_d.mp4' },
-                    // { id: 'kindness2', title: 'Kindness 2 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17BKindness_d.mp4' },
+                    { id: 'kindness2', title: 'Kindness 2 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17BKindness_d.mp4' },
                     // { id: 'kindness3', title: 'Kindness 3 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A18AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A18AKindness_d.mp4' },
                     // { id: 'kindness4', title: 'Kindness 4 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A18BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A18BKindness_d.mp4' },
                     // { id: 'kindness5', title: 'Kindness 5 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A19AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19AKindness_d.mp4' },
