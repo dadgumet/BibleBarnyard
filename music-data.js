@@ -26,7 +26,11 @@ const Daisy1 = {
         { title: "Keep Your Tongue From Evil", path: "./audio/Season1/Daisy/14_KeepYourTongueFromEvil.mp3" },
         { title: "Why Bad Things Happen", path: "./audio/Season1/Daisy/15_WhyBadThingsHappen.mp3" },
         { title: "Tommorrow", path: "./audio/Season1/Daisy/16_DaisyTommorrow.mp3" },
-        { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" }                                
+        { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
+        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
+        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
+        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
+        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" }                                   
     ]
 };
 
@@ -48,7 +52,10 @@ const Meadowlark1 = {
         { title: "Does God Still Love Me", path: "./audio/Season1/Meadowlark/14_DoesGodStillLoveMe.mp3" },
         { title: "We Broke the World", path: "./audio/Season1/Meadowlark/15_WeBroketheWorld.mp3" },
         { title: "Never Say Never", path: "./audio/Season1/Meadowlark/16_NeverSayNever.mp3" },
-        { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" }
+        { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" },
+        // { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" },
+        // { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" },
+        // { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" }
     ]
 };    
 
@@ -69,7 +76,10 @@ const Sarge1 = {
         { title: "Tell No Lies", path: "./audio/Season1/Sarge/13_TellNoLies.mp3" },
         { title: "David Wasn't Perfect", path: "./audio/Season1/Sarge/14_DavidWasntPerfect.mp3" },
         { title: "How Could God Let That Be", path: "./audio/Season1/Sarge/15_HowCouldGodLetThatBe.mp3" },
-        { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" }
+        { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" },
+        { title: "Marching Kindness", path: "./audio/Season1/Sarge/17_Marching_Kindness.mp3" },
+        // { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" },
+        // { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" }
     ]
 };
 
@@ -88,7 +98,10 @@ const Sivle1 = {
         { title: "Six Yet Seven", path: "./audio/Season1/Sivle/13_SixYetSeven.mp3" },
         { title: "Sweet To Stones", path: "./audio/Season1/Sivle/14_SweetToStones.mp3" },
         { title: "Bad vs Good", path: "./audio/Season1/Sivle/15_BadVsGood.mp3" },
-        { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" }
+        { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" },
+        { title: "Be Kind to the Mean", path: "./audio/Season1/Sivle/17_BeKingToTheMean.mp3" },
+        // { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" },
+        // { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" }
     ]
 };
 
