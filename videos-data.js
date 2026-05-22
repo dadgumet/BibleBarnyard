@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth'],
                     ['Joy', 'Parents', 'Lying', 'Why Bad Things Happen'],
-                    ['Kindness']
+                    ['Kindness', 'Sharing']
                 ],
                 categories: {
             'Love': {
@@ -89,17 +89,23 @@ const videosData = {
             },
             'Kindness': {
                 emoji: '🤝',
-                episodes: 'Episodes 33-40',
+                episodes: 'Episodes 33-36',
                 bibleBooks: '2nd Samuel–1st Kings',
                 videos: [
                     { id: 'kindness1', title: 'Kindness 1 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17AKindness_d.mp4' },
                     { id: 'kindness2', title: 'Kindness 2 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A17BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A17BKindness_d.mp4' },
                     { id: 'kindness3', title: 'Kindness 3 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A18AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A18AKindness_d.mp4' },
                     { id: 'kindness4', title: 'Kindness 4 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A18BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A18BKindness_d.mp4' },
-                    // { id: 'kindness5', title: 'Kindness 5 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A19AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19AKindness_d.mp4' },
-                    // { id: 'kindness6', title: 'Kindness 6 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A19BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19BKindness_d.mp4' },
-                    // { id: 'kindness7', title: 'Kindness 7 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A20AKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20AKindness_d.mp4' },
-                    // { id: 'kindness8', title: 'Kindness 8 of 8', stream: 'https://assets.biblebarnyard.com/series/A/A20BKindness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20BKindness_d.mp4' }
+                ]
+            },
+            'Sharing': {
+                emoji: '🤲',
+                episodes: 'Episodes 37-40',
+                videos: [
+                    { id: 'sharing1', title: 'Sharing 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A19ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19ASharing_d.mp4' },
+                    // { id: 'sharing2', title: 'Sharing 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A19BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19BSharing_d.mp4' },
+                    // { id: 'sharing3', title: 'Sharing 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A20ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20ASharing_d.mp4' },
+                    // { id: 'sharing4', title: 'Sharing 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A20BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20BSharing_d.mp4' },
                 ]
             }
         }
