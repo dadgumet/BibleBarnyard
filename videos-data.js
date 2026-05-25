@@ -104,7 +104,7 @@ const videosData = {
                 videos: [
                     { id: 'sharing1', title: 'Sharing 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A19ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19ASharing_d.mp4' },
                     { id: 'sharing2', title: 'Sharing 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A19BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19BSharing_d.mp4' },
-                    // { id: 'sharing3', title: 'Sharing 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A20ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20ASharing_d.mp4' },
+                    { id: 'sharing3', title: 'Sharing 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A20ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20ASharing_d.mp4' },
                     // { id: 'sharing4', title: 'Sharing 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A20BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A20BSharing_d.mp4' },
                 ]
             }

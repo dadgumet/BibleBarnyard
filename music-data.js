@@ -27,9 +27,11 @@ const Daisy1 = {
         { title: "Why Bad Things Happen", path: "./audio/Season1/Daisy/15_WhyBadThingsHappen.mp3" },
         { title: "Tommorrow", path: "./audio/Season1/Daisy/16_DaisyTommorrow.mp3" },
         { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
-        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
-        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
-        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" },
+        { title: "Kindness Is The Glue", path: "./audio/Season1/Daisy/18_KindnessIsTheGlue.mp3" },
+        { title: "God's Kindness", path: "./audio/Season1/Daisy/19_GodsKindness.mp3" },
+        { title: "Do Not Withhold", path: "./audio/Season1/Daisy/20_DoNotWithhold.mp3" },
+        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" } ,
+        // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" } ,
         // { title: "Be Kind Every Day", path: "./audio/Season1/Daisy/17_BeKindEveryDay.mp3" }                                   
     ]
 };
@@ -53,6 +55,9 @@ const Meadowlark1 = {
         { title: "We Broke the World", path: "./audio/Season1/Meadowlark/15_WeBroketheWorld.mp3" },
         { title: "Never Say Never", path: "./audio/Season1/Meadowlark/16_NeverSayNever.mp3" },
         { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" },
+        { title: "Peace At The Table", path: "./audio/Season1/Meadowlark/18_PeaceAtTheTable.mp3" },
+        { title: "I Don't Want To Be Kind", path: "./audio/Season1/Meadowlark/19_IDontWantToBeKind.mp3" },
+        { title: "Please God Don't Ask", path: "./audio/Season1/Meadowlark/20_PleaseGodDontAsk.mp3" },
         // { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" },
         // { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" },
         // { title: "Be Kind Rewind", path: "./audio/Season1/Meadowlark/17_BeKindRewind.mp3" }
@@ -78,6 +83,10 @@ const Sarge1 = {
         { title: "How Could God Let That Be", path: "./audio/Season1/Sarge/15_HowCouldGodLetThatBe.mp3" },
         { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" },
         { title: "Marching Kindness", path: "./audio/Season1/Sarge/17_Marching_Kindness.mp3" },
+        { title: "Lying Is Not Good", path: "./audio/Season1/Sarge/18_LyingsNotGood.mp3" },
+        { title: "Measured And Pressed", path: "./audio/Season1/Sarge/19_MeasuredAndPressed.mp3" },
+        // { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" },
+        // { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" },
         // { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" },
         // { title: "Hannah's Crazy", path: "./audio/Season1/Sarge/16_HannahsCrazy.mp3" }
     ]
@@ -100,6 +109,10 @@ const Sivle1 = {
         { title: "Bad vs Good", path: "./audio/Season1/Sivle/15_BadVsGood.mp3" },
         { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" },
         { title: "Be Kind to the Mean", path: "./audio/Season1/Sivle/17_BeKingToTheMean.mp3" },
+        { title: "Kind Of Nice To Be Kind", path: "./audio/Season1/Sivle/18_KindOfNiceToBeKind.mp3" },
+        { title: "Sharing Is Caring", path: "./audio/Season1/Sivle/19_SharingIsCaring.mp3" },
+        // { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" },
+        // { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" },
         // { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" },
         // { title: "Pour Pour Pour", path: "./audio/Season1/Sivle/16_PourPourPour.mp3" }
     ]
@@ -116,6 +129,9 @@ const Billie1 = {
         { title: "Bad Is Good", path: "./audio/Season1/Billie/15_BadIsGood.mp3" },
         { title: "Sticks and Stones", path: "./audio/Season1/Billie/16_SticksAndStones.mp3" },
         { title: "Oh Brother", path: "./audio/Season1/Billie/17_OhBrother.mp3" },
+        { title: "Kindness Is The Glue", path: "./audio/Season1/Billie/18_KindnessIsTheGlue.mp3" },
+        { title: "But God", path: "./audio/Season1/Billie/19_ButGod.mp3" },
+        { title: "Sharing The Blue Blades Way", path: "./audio/Season1/Billie/20_SharingTheBlueBladesWay.mp3" },
         // { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" },
         // { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" },
         // { title: "This Is The Day", path: "./audio/Season1/Billie/10_This_Is_The_Day.mp3" }
