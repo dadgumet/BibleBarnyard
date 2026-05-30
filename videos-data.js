@@ -113,7 +113,7 @@ const videosData = {
                 episodes: 'Episodes 41-44',
                 videos: [
                     { id: 'anger1', title: 'Anger 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A21AAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A21AAnger_d.mp4' },
-                    // { id: 'anger2', title: 'Anger 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A21BAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A21BAnger_d.mp4' },
+                    { id: 'anger2', title: 'Anger 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A21BAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A21BAnger_d.mp4' },
                     // { id: 'anger3', title: 'Anger 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A22AAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A22AAnger_d.mp4' },
                     // { id: 'anger4', title: 'Anger 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A22BAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A22BAnger_d.mp4' }
                 ]
