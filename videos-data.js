@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth'],
                     ['Joy', 'Parents', 'Lying', 'Why Bad Things Happen'],
-                    ['Kindness', 'Sharing', 'Anger']
+                    ['Kindness', 'Sharing', 'Anger', 'Angels']
                 ],
                 categories: {
             'Love': {
@@ -116,6 +116,14 @@ const videosData = {
                     { id: 'anger2', title: 'Anger 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A21BAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A21BAnger_d.mp4' },
                     { id: 'anger3', title: 'Anger 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A22AAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A22AAnger_d.mp4' },
                     { id: 'anger4', title: 'Anger 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A22BAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A22BAnger_d.mp4' }
+                ]
+            },
+            'Angels': {
+                emoji: '😇',
+                episodes: 'Episodes 45-46',
+                videos: [
+                    { id: 'angels1', title: 'Angels 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23AAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23AAngels_d.mp4' },
+                    // { id: 'angels2', title: 'Angels 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23BAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23BAngels_d.mp4' }
                 ]
             }
         }
