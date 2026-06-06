@@ -123,11 +123,11 @@ const videosData = {
             'Angels': {
                 emoji: '😇',
                 episodes: 'Episodes 45-46',
-                bibleBooks: '2nd Kings',
+                bibleBooks: '2nd Kings!',
                 videos: [
                     { id: 'angels1', title: 'Angels 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23AAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23AAngels_d.mp4' },
                     { id: 'angels2', title: 'Angels 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23BAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23BAngels_d.mp4' }
-                ]
+                ]                
             },
             // 'Cheating': {
             //     emoji: '🤥',
