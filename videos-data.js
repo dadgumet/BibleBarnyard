@@ -8,9 +8,9 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Love', 'Truth'],
-                    ['Joy', 'Parents', 'Lying', 'Why Bad Things Happen'],
-                    ['Kindness', 'Sharing', 'Anger', 'Angels']
+                    ['Love', 'Truth', 'Joy'],
+                    ['Parents', 'Lying', 'Why Bad Things Happen', 'Kindness'],
+                    ['Sharing', 'Anger', 'Angels', 'Cheating']
                 ],
                 categories: {
             'Love': {
@@ -101,6 +101,7 @@ const videosData = {
             'Sharing': {
                 emoji: '🤲',
                 episodes: 'Episodes 37-40',
+                bibleBooks: '1st Kings',
                 videos: [
                     { id: 'sharing1', title: 'Sharing 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A19ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19ASharing_d.mp4' },
                     { id: 'sharing2', title: 'Sharing 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A19BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A19BSharing_d.mp4' },
@@ -111,6 +112,7 @@ const videosData = {
             'Anger': {
                 emoji: '😡',
                 episodes: 'Episodes 41-44',
+                bibleBooks: '1st Kings-2nd Kings',
                 videos: [
                     { id: 'anger1', title: 'Anger 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A21AAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A21AAnger_d.mp4' },
                     { id: 'anger2', title: 'Anger 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A21BAnger_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A21BAnger_d.mp4' },
@@ -121,11 +123,21 @@ const videosData = {
             'Angels': {
                 emoji: '😇',
                 episodes: 'Episodes 45-46',
+                bibleBooks: '2nd Kings',
                 videos: [
                     { id: 'angels1', title: 'Angels 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23AAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23AAngels_d.mp4' },
-                    // { id: 'angels2', title: 'Angels 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23BAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23BAngels_d.mp4' }
+                    { id: 'angels2', title: 'Angels 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23BAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23BAngels_d.mp4' }
                 ]
-            }
+            },
+            // 'Cheating': {
+            //     emoji: '🤥',
+            //     episodes: 'Episodes 47-48',
+            //     bibleBooks: '2nd Kings',
+            //     videos: [
+            //         { id: 'cheating1', title: 'Cheating 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24ACheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24ACheating_d.mp4' },
+            //         { id: 'cheating2', title: 'Cheating 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24BCheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24BCheating_d.mp4' }
+            //     ]
+            // }
         }
             } //,
             // 'Season 2': {
