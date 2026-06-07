@@ -123,21 +123,21 @@ const videosData = {
             'Angels': {
                 emoji: '😇',
                 episodes: 'Episodes 45-46',
-                bibleBooks: '2nd Kings!',
+                bibleBooks: '2nd Kings',
                 videos: [
                     { id: 'angels1', title: 'Angels 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23AAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23AAngels_d.mp4' },
                     { id: 'angels2', title: 'Angels 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A23BAngels_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A23BAngels_d.mp4' }
                 ]                
             },
-            // 'Cheating': {
-            //     emoji: '🤥',
-            //     episodes: 'Episodes 47-48',
-            //     bibleBooks: '2nd Kings',
-            //     videos: [
-            //         { id: 'cheating1', title: 'Cheating 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24ACheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24ACheating_d.mp4' },
-            //         { id: 'cheating2', title: 'Cheating 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24BCheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24BCheating_d.mp4' }
-            //     ]
-            // }
+            'Cheating': {
+                emoji: '🤥',
+                episodes: 'Episodes 47-48',
+                bibleBooks: '2nd Kings',
+                videos: [
+                    { id: 'cheating1', title: 'Cheating 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24ACheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24ACheating_d.mp4' },
+                    // { id: 'cheating2', title: 'Cheating 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24BCheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24BCheating_d.mp4' }
+                ]
+            }
         }
             } //,
             // 'Season 2': {
@@ -163,9 +163,9 @@ const videosData = {
                     'Hollow Weenie': {
                         emoji: '🎃',
                         videos: [
-                            { id: 'hollow1', title: 'Hollow Weenie Act 1', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act1_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act1_d.mp4' } //,
-                            // { id: 'hollow2', title: 'Hollow Weenie Act 2', stream: '', download: '' },
-                            // { id: 'hollow3', title: 'Hollow Weenie Act 3', stream: '', download: '' },
+                            { id: 'hollow1', title: 'Hollow Weenie Act 1', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act1_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act1_d.mp4' },
+                            { id: 'hollow2', title: 'Hollow Weenie Act 2', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act2_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act2_d.mp4' },
+                            { id: 'hollow3', title: 'Hollow Weenie Act 3', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act3_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act3_d.mp4' },
                             // { id: 'hollow4', title: 'Hollow Weenie Act 4', stream: '', download: '' },
                         ]
                     }
