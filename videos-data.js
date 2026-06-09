@@ -135,7 +135,7 @@ const videosData = {
                 bibleBooks: '2nd Kings',
                 videos: [
                     { id: 'cheating1', title: 'Cheating 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24ACheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24ACheating_d.mp4' },
-                    // { id: 'cheating2', title: 'Cheating 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24BCheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24BCheating_d.mp4' }
+                    { id: 'cheating2', title: 'Cheating 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24BCheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24BCheating_d.mp4' }
                 ]
             }
         }
