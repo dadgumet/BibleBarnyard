@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy'],
                     ['Parents', 'Lying', 'Why Bad Things Happen', 'Kindness'],
-                    ['Sharing', 'Anger', 'Angels', 'Cheating']
+                    ['Sharing', 'Anger', 'Angels', 'Cheating', 'Peace']
                 ],
                 categories: {
             'Love': {
@@ -136,6 +136,17 @@ const videosData = {
                 videos: [
                     { id: 'cheating1', title: 'Cheating 1 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24ACheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24ACheating_d.mp4' },
                     { id: 'cheating2', title: 'Cheating 2 of 2', stream: 'https://assets.biblebarnyard.com/series/A/A24BCheating_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A24BCheating_d.mp4' }
+                ]
+            },
+            'Peace': {
+                emoji: '🕊️',
+                episodes: 'Episodes 49-52',
+                bibleBooks: '1st Chronicles',
+                videos: [
+                    { id: 'peace1', title: 'Peace 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A25APeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A25APeace_d.mp4' },
+                    // { id: 'peace2', title: 'Peace 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A25BPeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A25BPeace_d.mp4' },
+                    // { id: 'peace3', title: 'Peace 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26APeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26APeace_d.mp4' },
+                    // { id: 'peace4', title: 'Peace 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26BPeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26BPeace_d.mp4' }
                 ]
             }
         }
