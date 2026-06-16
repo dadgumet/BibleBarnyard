@@ -145,7 +145,7 @@ const videosData = {
                 videos: [
                     { id: 'peace1', title: 'Peace 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A25APeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A25APeace_d.mp4' },
                     { id: 'peace2', title: 'Peace 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A25BPeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A25BPeace_d.mp4' },
-                    // { id: 'peace3', title: 'Peace 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26APeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26APeace_d.mp4' },
+                    { id: 'peace3', title: 'Peace 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26APeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26APeace_d.mp4' },
                     // { id: 'peace4', title: 'Peace 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26BPeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26BPeace_d.mp4' }
                 ]
             }
