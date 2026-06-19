@@ -8,9 +8,9 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Love', 'Truth', 'Joy'],
-                    ['Parents', 'Lying', 'Why Bad Things Happen', 'Kindness'],
-                    ['Sharing', 'Anger', 'Angels', 'Cheating', 'Peace']
+                    ['Love', 'Truth', 'Joy', 'Parents'],
+                    ['Lying', 'Why Bad Things Happen', 'Kindness', 'Sharing'],
+                    ['Anger', 'Angels', 'Cheating', 'Peace', 'Obeying']
                 ],
                 categories: {
             'Love': {
@@ -147,6 +147,17 @@ const videosData = {
                     { id: 'peace2', title: 'Peace 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A25BPeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A25BPeace_d.mp4' },
                     { id: 'peace3', title: 'Peace 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26APeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26APeace_d.mp4' },
                     { id: 'peace4', title: 'Peace 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A26BPeace_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A26BPeace_d.mp4' }
+                ]
+            },
+            'Obeying': {
+                emoji: '🧭',
+                episodes: 'Episodes 53-56',
+                bibleBooks: '1st Chronicles-2nd Chronicles',
+                videos: [
+                    { id: 'obeying1', title: 'Obeying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A27AObeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A27AObeying_d.mp4' },
+                    // { id: 'obeying2', title: 'Obeying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A27BObeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A27BObeying_d.mp4' },
+                    // { id: 'obeying3', title: 'Obeying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A28AObeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A28AObeying_d.mp4' },
+                    // { id: 'obeying4', title: 'Obeying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A28BObeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A28BObeying_d.mp4' }
                 ]
             }
         }
