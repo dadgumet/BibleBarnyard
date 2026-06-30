@@ -166,7 +166,7 @@ const videosData = {
                 bibleBooks: '2nd Chronicles',
                 videos: [
                     { id: 'rebellion1', title: 'Rebellion 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A29ARebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A29ARebellion_d.mp4' },
-                    // { id: 'rebellion2', title: 'Rebellion 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A29BRebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A29BRebellion_d.mp4' },
+                    { id: 'rebellion2', title: 'Rebellion 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A29BRebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A29BRebellion_d.mp4' },
                     // { id: 'rebellion3', title: 'Rebellion 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A30ARebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A30ARebellion_d.mp4' },
                     // { id: 'rebellion4', title: 'Rebellion 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A30BRebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A30BRebellion_d.mp4' }
                 ]
