@@ -176,13 +176,13 @@ const videosData = {
             // 'Season 2': {
             //     emoji: '🌿',
             //     categories: {
-            //         // Season 2 categories will go here
+            //         // Season 2 categories will go here when available
             //     }
             // },
             // 'Season 3': {
             //     emoji: '🍃',
             //     categories: {
-            //         // Season 3 categories will go here
+            //         // Season 3 categories will go here when available
             //     }
             // }
         }
