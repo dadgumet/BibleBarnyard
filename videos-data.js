@@ -188,7 +188,7 @@ const videosData = {
         }
     },
     'Specials': {
-        emoji: '👻',
+        emoji: '✨',
         categories: {
             'Mini Series': {
                 emoji: '🎬',
@@ -200,6 +200,12 @@ const videosData = {
                             { id: 'hollow2', title: 'Hollow Weenie Act 2', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act2_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act2_d.mp4' },
                             { id: 'hollow3', title: 'Hollow Weenie Act 3', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act3_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act3_d.mp4' },
                             { id: 'hollow4', title: 'Hollow Weenie Act 4', stream: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act4_s.mp4', download: 'https://assets.biblebarnyard.com/series/HollowWeenie/Act4_d.mp4' }
+                        ]
+                    },                
+                    'Christmas Specials': {
+                        emoji: '🎄',
+                        videos: [
+                            { id: 'christmas', title: 'Christmas Special 1', stream: 'https://assets.biblebarnyard.com/series/Christmas/BB_Christmas_1_s.mp4', download: 'https://assets.biblebarnyard.com/series/Christmas/BB_Christmas_1_d.mp4' }                           
                         ]
                     }
                 }
