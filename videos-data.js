@@ -206,6 +206,7 @@ const videosData = {
                         emoji: '🎄',
                         videos: [
                             { id: 'christmas', title: 'Christmas Special 1', stream: 'https://assets.biblebarnyard.com/series/Christmas/BB_Christmas_1_s.mp4', download: 'https://assets.biblebarnyard.com/series/Christmas/BB_Christmas_1_d.mp4' },
+                            { id: 'christmas', title: 'Place Holder', stream: 'https://assets.biblebarnyard.com/series/Christmas/BB_Christmas_1_s.mp4', download: 'https://assets.biblebarnyard.com/series/Christmas/BB_Christmas_1_d.mp4' }
                             // Add more Christmas specials here as needed
                         ]
                     }
