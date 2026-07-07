@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents'],
                     ['Lying', 'Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger'],
-                    ['Angels', 'Cheating', 'Peace', 'Obeying', 'Rebellion']
+                    ['Angels', 'Cheating', 'Peace', 'Obeying', 'Rebellion', 'Patience']
                 ],
                 categories: {
             'Love': {
@@ -169,6 +169,17 @@ const videosData = {
                     { id: 'rebellion2', title: 'Rebellion 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A29BRebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A29BRebellion_d.mp4' },
                     { id: 'rebellion3', title: 'Rebellion 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A30ARebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A30ARebellion_d.mp4' },
                     { id: 'rebellion4', title: 'Rebellion 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A30BRebellion_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A30BRebellion_d.mp4' }
+                ]
+            },
+            'Patience': {
+                emoji: '⏳',
+                episodes: 'Episodes 61-64',
+                bibleBooks: 'Ezra',
+                videos: [
+                    { id: 'patience1', title: 'Patience 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31APatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31APatience_d.mp4' },
+                    // { id: 'patience2', title: 'Patience 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31BPatience_d.mp4' },
+                    // { id: 'patience3', title: 'Patience 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32APatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32APatience_d.mp4' },
+                    // { id: 'patience4', title: 'Patience 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32BPatience_d.mp4' }
                 ]
             }
         }
