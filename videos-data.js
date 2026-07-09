@@ -177,7 +177,7 @@ const videosData = {
                 bibleBooks: 'Ezra',
                 videos: [
                     { id: 'patience1', title: 'Patience 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31APatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31APatience_d.mp4' },
-                    // { id: 'patience2', title: 'Patience 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31BPatience_d.mp4' },
+                    { id: 'patience2', title: 'Patience 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31BPatience_d.mp4' },
                     // { id: 'patience3', title: 'Patience 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32APatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32APatience_d.mp4' },
                     // { id: 'patience4', title: 'Patience 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32BPatience_d.mp4' }
                 ]
