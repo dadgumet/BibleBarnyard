@@ -8,9 +8,9 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Love', 'Truth', 'Joy', 'Parents'],
-                    ['Lying', 'Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger'],
-                    ['Angels', 'Cheating', 'Peace', 'Obeying', 'Rebellion', 'Patience']
+                    ['Love', 'Truth', 'Joy', 'Parents', 'Lying'],
+                    ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating'],
+                    ['Peace', 'Obeying', 'Rebellion', 'Patience']
                 ],
                 categories: {
             'Love': {
@@ -179,9 +179,21 @@ const videosData = {
                     { id: 'patience1', title: 'Patience 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31APatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31APatience_d.mp4' },
                     { id: 'patience2', title: 'Patience 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A31BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A31BPatience_d.mp4' },
                     { id: 'patience3', title: 'Patience 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32APatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32APatience_d.mp4' },
-                    // { id: 'patience4', title: 'Patience 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32BPatience_d.mp4' }
+                    { id: 'patience4', title: 'Patience 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32BPatience_d.mp4' }
                 ]
             }
+            // ,
+            // 'Sharing': {
+            //     emoji: '🤲',
+            //     episodes: 'Episodes 65-68',
+            //     bibleBooks: 'Ezra',
+            //     videos: [
+            //         { id: 'sharing65_1', title: 'Sharing 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33ASharing_d.mp4' },
+            //         { id: 'sharing65_2', title: 'Sharing 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33BSharing_d.mp4' },
+            //         { id: 'sharing65_3', title: 'Sharing 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34ASharing_d.mp4' },
+            //         { id: 'sharing65_4', title: 'Sharing 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34BSharing_d.mp4' }
+            //     ]
+            // }
         }
             } //,
             // 'Season 2': {
