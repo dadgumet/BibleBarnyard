@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying'],
                     ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating'],
-                    ['Peace', 'Obeying', 'Rebellion', 'Patience']
+                    ['Peace', 'Obeying', 'Rebellion', 'Patience', 'Giving']
                 ],
                 categories: {
             'Love': {
@@ -182,18 +182,18 @@ const videosData = {
                     { id: 'patience4', title: 'Patience 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A32BPatience_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A32BPatience_d.mp4' }
                 ]
             }
-            // ,
-            // 'Sharing': {
-            //     emoji: '🤲',
-            //     episodes: 'Episodes 65-68',
-            //     bibleBooks: 'Ezra',
-            //     videos: [
-            //         { id: 'sharing65_1', title: 'Sharing 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33ASharing_d.mp4' },
-            //         { id: 'sharing65_2', title: 'Sharing 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33BSharing_d.mp4' },
-            //         { id: 'sharing65_3', title: 'Sharing 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34ASharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34ASharing_d.mp4' },
-            //         { id: 'sharing65_4', title: 'Sharing 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34BSharing_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34BSharing_d.mp4' }
-            //     ]
-            // }
+            ,
+            'Giving': {
+                emoji: '💝',
+                episodes: 'Episodes 65-68',
+                bibleBooks: 'Ezra',
+                videos: [
+                    { id: 'giving65_1', title: 'Giving 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33AGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33AGiving_d.mp4' },
+                    // { id: 'giving65_2', title: 'Giving 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33BGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33BGiving_d.mp4' },
+                    // { id: 'giving65_3', title: 'Giving 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34AGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34AGiving_d.mp4' },
+                    // { id: 'giving65_4', title: 'Giving 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34BGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34BGiving_d.mp4' }
+                ]
+            }
         }
             } //,
             // 'Season 2': {
