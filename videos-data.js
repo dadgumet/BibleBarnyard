@@ -188,10 +188,10 @@ const videosData = {
                 episodes: 'Episodes 65-68',
                 bibleBooks: 'Ezra',
                 videos: [
-                    { id: 'giving65_1', title: 'Giving 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33AGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33AGiving_d.mp4' },
-                    // { id: 'giving65_2', title: 'Giving 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33BGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33BGiving_d.mp4' },
-                    // { id: 'giving65_3', title: 'Giving 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34AGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34AGiving_d.mp4' },
-                    // { id: 'giving65_4', title: 'Giving 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34BGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34BGiving_d.mp4' }
+                    { id: 'giving1', title: 'Giving 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33AGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33AGiving_d.mp4' },
+                    // { id: 'giving2', title: 'Giving 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A33BGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A33BGiving_d.mp4' },
+                    // { id: 'giving3', title: 'Giving 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34AGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34AGiving_d.mp4' },
+                    // { id: 'giving4', title: 'Giving 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A34BGiving_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A34BGiving_d.mp4' }
                 ]
             }
         }
