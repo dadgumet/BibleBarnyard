@@ -9,8 +9,8 @@ const videosData = {
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying'],
-                    ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating'],
-                    ['Peace', 'Obeying', 'Rebellion', 'Patience', 'Giving', 'Siblings']
+                    ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Peace'],
+                    ['Obeying', 'Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses']
                 ],
                 categories: {
             'Love': {
@@ -204,6 +204,17 @@ const videosData = {
                     { id: 'siblings2', title: 'Siblings 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A35BSiblings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A35BSiblings_d.mp4' },
                     { id: 'siblings3', title: 'Siblings 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A36ASibling_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A36ASibling_d.mp4' },
                     { id: 'siblings4', title: 'Siblings 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A36BSiblings_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A36BSiblings_d.mp4' }
+                ]
+            },
+            'Excuses': {
+                emoji: '🐣',
+                episodes: 'Episodes 73-76',
+                bibleBooks: 'Esther',
+                videos: [
+                    { id: 'excuses1', title: 'Excuses 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A37AExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A37AExcuses_d.mp4' },
+                    // { id: 'excuses2', title: 'Excuses 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_d.mp4' },
+                    // { id: 'excuses3', title: 'Excuses 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A38AExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A38AExcuses_d.mp4' },
+                    // { id: 'excuses4', title: 'Excuses 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A38BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A38BExcuses_d.mp4' }
                 ]
             }
         }
