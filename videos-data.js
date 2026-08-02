@@ -207,12 +207,12 @@ const videosData = {
                 ]
             },
             'Excuses': {
-                emoji: '🐣',
+                emoji: '🤥',
                 episodes: 'Episodes 73-76',
                 bibleBooks: 'Esther',
                 videos: [
                     { id: 'excuses1', title: 'Excuses 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A37AExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A37AExcuses_d.mp4' },
-                    // { id: 'excuses2', title: 'Excuses 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_d.mp4' },
+                    { id: 'excuses2', title: 'Excuses 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_d.mp4' },
                     // { id: 'excuses3', title: 'Excuses 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A38AExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A38AExcuses_d.mp4' },
                     // { id: 'excuses4', title: 'Excuses 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A38BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A38BExcuses_d.mp4' }
                 ]
