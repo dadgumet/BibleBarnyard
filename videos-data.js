@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying'],
                     ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Peace'],
-                    ['Obeying', 'Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses']
+                    ['Obeying', 'Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness']
                 ],
                 categories: {
             'Love': {
@@ -215,6 +215,17 @@ const videosData = {
                     { id: 'excuses2', title: 'Excuses 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A37BExcuses_d.mp4' },
                     { id: 'excuses3', title: 'Excuses 3 of 4', stream: 'https://assets.biblebarnyard.com/series/MisfitGrotto/A38AExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/MisfitGrotto/A38AExcuses_d.mp4' },
                     { id: 'excuses4', title: 'Excuses 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A38BExcuses_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A38BExcuses_d.mp4' }
+                ]
+            },
+            'Selfishness': {
+                emoji: '😒',
+                episodes: 'Episodes 77-80',
+                bibleBooks: 'Esther',
+                videos: [
+                    { id: 'selfishness1', title: 'Selfishness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A39ASelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A39ASelfishness_d.mp4' },
+                    // { id: 'selfishness2', title: 'Selfishness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A39BSelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A39BSelfishness_d.mp4' },
+                    // { id: 'selfishness3', title: 'Selfishness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A40ASelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A40ASelfishness_d.mp4' },
+                    // { id: 'selfishness4', title: 'Selfishness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A40BSelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A40BSelfishness_d.mp4' }
                 ]
             }
         }
