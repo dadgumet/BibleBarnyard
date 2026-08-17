@@ -8,9 +8,9 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Love', 'Truth', 'Joy', 'Parents', 'Lying'],
-                    ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Peace'],
-                    ['Obeying', 'Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness']
+                    ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace'],
+                    ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying'],
+                    ['Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness', 'Promises']
                 ],
                 categories: {
             'Love': {
@@ -226,6 +226,18 @@ const videosData = {
                     { id: 'selfishness2', title: 'Selfishness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A39BSelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A39BSelfishness_d.mp4' },
                     { id: 'selfishness3', title: 'Selfishness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A40ASelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A40ASelfishness_d.mp4' },
                     { id: 'selfishness4', title: 'Selfishness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A40BSelfishness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A40BSelfishness_d.mp4' }
+                ]
+            },
+            'Promises':{
+                emoji: '',
+                episodes: 'Episodes 81-84',
+                bibleBooks: 'Job',
+                videos: [
+                    { id: 'promises1', title: 'Promises 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A41APromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A41APromises_d.mp4' },
+                    // { id: 'promises2', title: 'Promises 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A41BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A41BPromises_d.mp4' },
+                    // { id: 'promises1', title: 'Promises 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42APromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42APromises_d.mp4' },
+                    // { id: 'promises2', title: 'Promises 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42BPromises_d.mp4' },
+                    
                 ]
             }
         }
