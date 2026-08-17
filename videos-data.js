@@ -229,7 +229,7 @@ const videosData = {
                 ]
             },
             'Promises':{
-                emoji: '',
+                emoji: '🔒',
                 episodes: 'Episodes 81-84',
                 bibleBooks: 'Job',
                 videos: [
@@ -240,6 +240,7 @@ const videosData = {
                     
                 ]
             }
+
         }
             } //,
             // 'Season 2': {
@@ -254,6 +255,7 @@ const videosData = {
             //         // Season 3 categories will go here when available
             //     }
             // }
+            //
         }
     },
     'Specials': {
