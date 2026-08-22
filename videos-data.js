@@ -235,8 +235,8 @@ const videosData = {
                 videos: [
                     { id: 'promises1', title: 'Promises 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A41APromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A41APromises_d.mp4' },
                     { id: 'promises2', title: 'Promises 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A41BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A41BPromises_d.mp4' },
-                    // { id: 'promises1', title: 'Promises 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42APromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42APromises_d.mp4' },
-                    // { id: 'promises2', title: 'Promises 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42BPromises_d.mp4' },
+                    { id: 'promises3', title: 'Promises 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42APromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42APromises_d.mp4' },
+                    // { id: 'promises4', title: 'Promises 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42BPromises_d.mp4' },
                     
                 ]
             }
