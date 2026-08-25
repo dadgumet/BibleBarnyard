@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace'],
                     ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying'],
-                    ['Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness', 'Promises']
+                    ['Rebellion', 'Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness']
                 ],
                 categories: {
             'Love': {
@@ -237,6 +237,18 @@ const videosData = {
                     { id: 'promises2', title: 'Promises 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A41BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A41BPromises_d.mp4' },
                     { id: 'promises3', title: 'Promises 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42APromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42APromises_d.mp4' },
                     { id: 'promises4', title: 'Promises 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A42BPromises_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A42BPromises_d.mp4' },
+                    
+                ]
+            },
+            'Happiness':{
+                emoji: '😄',
+                episodes: 'Episodes 85-88',
+                bibleBooks: 'Psalms',
+                videos: [
+                    { id: 'happiness1', title: 'Happiness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A43AHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A43AHappiness_d.mp4' },
+                    // { id: 'happiness2', title: 'Happiness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A43BHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A43BHappiness_d.mp4' },
+                    // { id: 'happiness3', title: 'Happiness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A44AHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A44AHappiness_d.mp4' },
+                    // { id: 'happiness4', title: 'Happiness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A44BHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A44BHappiness_d.mp4' },
                     
                 ]
             }
