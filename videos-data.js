@@ -246,7 +246,7 @@ const videosData = {
                 bibleBooks: 'Psalms',
                 videos: [
                     { id: 'happiness1', title: 'Happiness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A43AHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A43AHappiness_d.mp4' },
-                    // { id: 'happiness2', title: 'Happiness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A43BHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A43BHappiness_d.mp4' },
+                    { id: 'happiness2', title: 'Happiness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A43BHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A43BHappiness_d.mp4' },
                     // { id: 'happiness3', title: 'Happiness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A44AHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A44AHappiness_d.mp4' },
                     // { id: 'happiness4', title: 'Happiness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A44BHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A44BHappiness_d.mp4' },
                     
