@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace'],
                     ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying', 'Rebellion'],
-                    ['Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness']
+                    ['Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1']
                 ],
                 categories: {
             'Love': {
@@ -262,8 +262,8 @@ const videosData = {
                     // { id: 'biblestories3', title: 'Bible Stories 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A46ABibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A46ABibleStories_d.mp4' },
                     // { id: 'biblestories4', title: 'Bible Stories 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A46BBibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A46BBibleStories_d.mp4' }
                 ]
-        }
-            } ,
+            },
+            //} ,
             // 'Season 2': {
             //     emoji: '🌿',
             //     categories: {
@@ -277,6 +277,8 @@ const videosData = {
             //     }
             // }
             //
+                }
+            }
         }
     },
     'Specials': {
