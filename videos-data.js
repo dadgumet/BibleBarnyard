@@ -251,8 +251,17 @@ const videosData = {
                     { id: 'happiness4', title: 'Happiness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A44BHappiness_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A44BHappiness_d.mp4' },
                     
                 ]
-            }
-
+            },
+            'BibleStories1':{
+                emoji: '📖',
+                episodes: 'Episodes 89-92',
+                bibleBooks: 'Psalms',
+                videos: [
+                    { id: 'biblestories1', title: 'Bible Stories 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A45ABibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A45ABibleStories_d.mp4' },
+                    // { id: 'biblestories2', title: 'Bible Stories 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A45BBibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A45BBibleStories_d.mp4' },
+                    // { id: 'biblestories3', title: 'Bible Stories 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A46ABibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A46ABibleStories_d.mp4' },
+                    // { id: 'biblestories4', title: 'Bible Stories 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A46BBibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A46BBibleStories_d.mp4' }
+                ]
         }
             } ,
             // 'Season 2': {
