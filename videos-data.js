@@ -8,9 +8,9 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace'],
-                    ['Why Bad Things Happen', 'Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying', 'Rebellion'],
-                    ['Patience', 'Giving', 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1']
+                    ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace', 'Why Bad Things Happen'],
+                    ['Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying', 'Rebellion','Patience', 'Giving'],
+                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt']
                 ],
                 categories: {
             'Love': {
@@ -261,6 +261,17 @@ const videosData = {
                     { id: 'biblestories2', title: 'Bible Stories 2 of 4', stream: 'https://assets.biblebarnyard.com/series/MisfitGrotto/A45BBibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/MisfitGrotto/A45BBibleStories_d.mp4' },
                     { id: 'biblestories3', title: 'Bible Stories 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A46ABibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A46ABibleStories_d.mp4' },
                     { id: 'biblestories4', title: 'Bible Stories 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A46BBibleStories_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A46BBibleStories_d.mp4' }
+                ]
+            },
+            'WhyWeHurt':{
+                emoji: '💔',
+                episodes: 'Episodes 93-96',
+                bibleBooks: 'Psalms',
+                videos: [
+                    { id: 'whywehurt1', title: 'Why We Hurt 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47AWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47AWhyWeHurt_d.mp4' },
+                    // { id: 'whywehurt2', title: 'Why We Hurt 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_d.mp4' },
+                    // { id: 'whywehurt3', title: 'Why We Hurt 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A48AWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A48AWhyWeHurt_d.mp4' },
+                    // { id: 'whywehurt4', title: 'Why We Hurt 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A48BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A48BWhyWeHurt_d.mp4' }
                 ]
             },
             //} ,
