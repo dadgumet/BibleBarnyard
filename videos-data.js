@@ -269,7 +269,7 @@ const videosData = {
                 bibleBooks: 'Psalms',
                 videos: [
                     { id: 'whywehurt1', title: 'Why We Hurt 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47AWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47AWhyWeHurt_d.mp4' },
-                    // { id: 'whywehurt2', title: 'Why We Hurt 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_d.mp4' },
+                    { id: 'whywehurt2', title: 'Why We Hurt 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_d.mp4' },
                     // { id: 'whywehurt3', title: 'Why We Hurt 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A48AWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A48AWhyWeHurt_d.mp4' },
                     // { id: 'whywehurt4', title: 'Why We Hurt 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A48BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A48BWhyWeHurt_d.mp4' }
                 ]
