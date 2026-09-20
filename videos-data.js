@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace', 'Why Bad Things Happen'],
                     ['Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying', 'Rebellion','Patience', 'Giving'],
-                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt']
+                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt', 'Consequences']
                 ],
                 categories: {
             'Love': {
@@ -266,7 +266,7 @@ const videosData = {
             'WhyWeHurt':{
                 emoji: '💔',
                 episodes: 'Episodes 93-96',
-                bibleBooks: 'Psalms',
+                bibleBooks: 'Proverbs',
                 videos: [
                     { id: 'whywehurt1', title: 'Why We Hurt 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47AWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47AWhyWeHurt_d.mp4' },
                     { id: 'whywehurt2', title: 'Why We Hurt 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A47BWhyWeHurt_d.mp4' },
@@ -274,6 +274,18 @@ const videosData = {
                     { id: 'whywehurt4', title: 'Why We Hurt 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A48BWhyWeHurt_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A48BWhyWeHurt_d.mp4' }
                 ]
             },
+            'Consequences':{
+                emoji: '⚖️',
+                episodes: 'Episodes 97-100',
+                bibleBooks: 'Proverbs',
+                videos: [
+                    { id: 'consequences1', title: 'Consequences 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A49AConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A49AConsequences_d.mp4' },
+                    // { id: 'consequences2', title: 'Consequences 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_d.mp4' },
+                    // { id: 'consequences3', title: 'Consequences 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A50AConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A50AConsequences_d.mp4' },
+                    // { id: 'consequences4', title: 'Consequences 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A50BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A50BConsequences_d.mp4' }
+                ]
+            },
+
             //} ,
             // 'Season 2': {
             //     emoji: '🌿',
