@@ -280,7 +280,7 @@ const videosData = {
                 bibleBooks: 'Proverbs',
                 videos: [
                     { id: 'consequences1', title: 'Consequences 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A49AConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A49AConsequences_d.mp4' },
-                    // { id: 'consequences2', title: 'Consequences 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_d.mp4' },
+                    { id: 'consequences2', title: 'Consequences 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_d.mp4' },
                     // { id: 'consequences3', title: 'Consequences 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A50AConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A50AConsequences_d.mp4' },
                     // { id: 'consequences4', title: 'Consequences 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A50BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A50BConsequences_d.mp4' }
                 ]
