@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace', 'Why Bad Things Happen'],
                     ['Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying', 'Rebellion','Patience', 'Giving'],
-                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt', 'Consequences']
+                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt', 'Consequences', 'Sin']
                 ],
                 categories: {
             'Love': {
@@ -283,6 +283,17 @@ const videosData = {
                     { id: 'consequences2', title: 'Consequences 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A49BConsequences_d.mp4' },
                     { id: 'consequences3', title: 'Consequences 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A50AConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A50AConsequences_d.mp4' },
                     { id: 'consequences4', title: 'Consequences 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A50BConsequences_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A50BConsequences_d.mp4' }
+                ]
+            },
+            'Sin':{
+                emoji: '⚠️',
+                episodes: 'Episodes 101-104',
+                bibleBooks: 'Proverbs',
+                videos: [
+                    { id: 'sin1', title: 'Sin 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A51ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A51ASin_d.mp4' },
+                    // { id: 'sin2', title: 'Sin 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A51BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A51BSin_d.mp4' },
+                    // { id: 'sin3', title: 'Sin 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52ASin_d.mp4' },
+                    // { id: 'sin4', title: 'Sin 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52BSin_d.mp4' }
                 ]
             },
 
