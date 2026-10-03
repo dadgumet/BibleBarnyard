@@ -3,7 +3,7 @@ const videosData = {
     'Bible Barnyard': {
         emoji: '🌾',
         seasons: {
-            'Season 1': {
+            'Season 1 Bible Barnyard': {
                 emoji: '🌱',
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
@@ -292,7 +292,7 @@ const videosData = {
                 videos: [
                     { id: 'sin1', title: 'Sin 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A51ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A51ASin_d.mp4' },
                     { id: 'sin2', title: 'Sin 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A51BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A51BSin_d.mp4' },
-                    // { id: 'sin3', title: 'Sin 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52ASin_d.mp4' },
+                    { id: 'sin3', title: 'Sin 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52ASin_d.mp4' },
                     // { id: 'sin4', title: 'Sin 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52BSin_d.mp4' }
                 ]
             },
