@@ -293,27 +293,39 @@ const videosData = {
                     { id: 'sin1', title: 'Sin 1 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A51ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A51ASin_d.mp4' },
                     { id: 'sin2', title: 'Sin 2 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A51BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A51BSin_d.mp4' },
                     { id: 'sin3', title: 'Sin 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52ASin_d.mp4' },
-                    // { id: 'sin4', title: 'Sin 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52BSin_d.mp4' }
+                    { id: 'sin4', title: 'Sin 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52BSin_d.mp4' }
                 ]
-            },
-
-            //} ,
-            // 'Season 2': {
-            //     emoji: '🌿',
-            //     categories: {
-            //         // Season 2 categories will go here when available to load
-            //     }
-            // },
-            // 'Season 3': {
-            //     emoji: '🍃',
-            //     categories: {
-            //         // Season 3 categories will go here when available
-            //     }
-            // }
-            //
+            },            
                 }
             }
         }
+    },
+    'Bible Boardwalk': {
+        emoji: '🎢',
+        seasons: {
+            'Season 2 Bible Boardwalk COMING SOON': {
+                emoji: '🎢',
+                // gridLayout defines how categories are arranged in columns.
+                // Each inner array is one column; values are category keys.
+                gridLayout: [
+                    ['Worry']
+                ],
+                categories: {
+                    'Worry': {
+                        emoji: '😰',
+                        episodes: 'Episodes 1-4',
+                        bibleBooks: 'Ecclesiastes',
+                        videos: [
+                            // { id: 'worry1', title: 'Worry 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B01Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01AWorry_d.mp4' },
+                            // { id: 'worry2', title: 'Worry 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B02Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01BWorry_d.mp4' },
+                            // { id: 'worry3', title: 'Worry 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B03Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02AWorry_d.mp4' },
+                            // { id: 'worry4', title: 'Worry 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B04Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02BWorry_d.mp4' }
+                        ]
+                    }
+                }
+            }
+        }
+        
     },
     'Specials': {
         emoji: '✨',
