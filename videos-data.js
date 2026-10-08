@@ -10,7 +10,7 @@ const videosData = {
                 gridLayout: [
                     ['Love', 'Truth', 'Joy', 'Parents', 'Lying', 'Peace', 'Why Bad Things Happen'],
                     ['Kindness', 'Sharing', 'Anger', 'Angels', 'Cheating', 'Obeying', 'Rebellion','Patience', 'Giving'],
-                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt', 'Consequences', 'Sin']
+                    [ 'Siblings', 'Excuses', 'Selfishness', 'Promises', 'Happiness', 'BibleStories1', 'WhyWeHurt', 'Consequences', 'Sin', 'Handoff']
                 ],
                 categories: {
             'Love': {
@@ -295,7 +295,17 @@ const videosData = {
                     { id: 'sin3', title: 'Sin 3 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52ASin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52ASin_d.mp4' },
                     { id: 'sin4', title: 'Sin 4 of 4', stream: 'https://assets.biblebarnyard.com/series/A/A52BSin_s.mp4', download: 'https://assets.biblebarnyard.com/series/A/A52BSin_d.mp4' }
                 ]
-            },            
+            },  
+            'Handoff':{
+                emoji: '🏃‍♂️',
+                episodes: 'Episodes 15',
+                bibleBooks: '',
+                videos: [
+                    { id: 'handoff1', title: 'Handoff', stream: 'https://assets.biblebarnyard.com/series/A/53.mp4', download: 'https://assets.biblebarnyard.com/series/A/53.mp4' }
+                                    ]
+            }, 
+            
+
                 }
             }
         }
