@@ -329,7 +329,7 @@ const videosData = {
                             { id: 'worry1', title: 'Worry 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B01Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01AWorry_d.mp4' },
                             { id: 'worry2', title: 'Worry 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B02Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01BWorry_d.mp4' },
                             { id: 'worry3', title: 'Worry 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B03Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02AWorry_d.mp4' },
-                            // { id: 'worry4', title: 'Worry 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B04Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02BWorry_d.mp4' }
+                            { id: 'worry4', title: 'Worry 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B04Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02BWorry_d.mp4' }
                         ]
                     }
                 }
