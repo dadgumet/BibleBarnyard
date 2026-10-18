@@ -318,7 +318,7 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Worry']
+                    ['Worry', 'Fear'],
                 ],
                 categories: {
                     'Worry': {
@@ -331,6 +331,15 @@ const videosData = {
                             { id: 'worry3', title: 'Worry 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B03Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02AWorry_d.mp4' },
                             { id: 'worry4', title: 'Worry 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B04Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02BWorry_d.mp4' }
                         ]
+                    },
+                    'Fear': {
+                        emoji: '😨',
+                        episodes: 'Episodes 5-6',
+                        bibleBooks: 'Ecclesiastes',
+                        videos: [
+                            { id: 'fear1', title: 'Fear 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B05Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B05AFear_d.mp4' },
+                            // { id: 'fear2', title: 'Fear 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B06Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B06BFear_d.mp4' },
+                       ]
                     }
                 }
             }
