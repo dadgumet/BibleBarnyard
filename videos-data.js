@@ -298,7 +298,7 @@ const videosData = {
             },  
             'Handoff':{
                 emoji: '🏃‍♂️',
-                episodes: 'Episodes 15',
+                episodes: 'Handoff',
                 bibleBooks: '',
                 videos: [
                     { id: 'handoff1', title: 'Handoff', stream: 'https://assets.biblebarnyard.com/series/A/53.mp4', download: 'https://assets.biblebarnyard.com/series/A/53.mp4' }
@@ -318,7 +318,8 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Worry', 'Fear'],
+                    ['Worry'],
+                    ['Fear'],
                 ],
                 categories: {
                     'Worry': {
@@ -338,7 +339,7 @@ const videosData = {
                         bibleBooks: 'Ecclesiastes',
                         videos: [
                             { id: 'fear1', title: 'Fear 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B05Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B05AFear_d.mp4' },
-                            // { id: 'fear2', title: 'Fear 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B06Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B06BFear_d.mp4' },
+                            { id: 'fear2', title: 'Fear 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B06Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B06BFear_d.mp4' },
                        ]
                     }
                 }
