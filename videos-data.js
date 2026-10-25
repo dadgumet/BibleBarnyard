@@ -320,6 +320,7 @@ const videosData = {
                 gridLayout: [
                     ['Worry'],
                     ['Fear'],
+                    ['Obeying']
                 ],
                 categories: {
                     'Worry': {
@@ -341,6 +342,17 @@ const videosData = {
                             { id: 'fear1', title: 'Fear 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B05Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B05AFear_d.mp4' },
                             { id: 'fear2', title: 'Fear 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B06Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B06BFear_d.mp4' },
                        ]
+                    },
+                    'Obeying': {
+                        emoji: '🫡',
+                        episodes: 'Episodes 7-10',
+                        bibleBooks: 'Ecclesiastes',
+                        videos: [
+                            { id: 'obeying1', title: 'Obeying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B07Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B07AObeying_d.mp4' },
+                            // { id: 'obeying2', title: 'Obeying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B08Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B08BObeying_d.mp4' },
+                            // { id: 'obeying3', title: 'Obeying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B09Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B09CObeying_d.mp4' },
+                            // { id: 'obeying4', title: 'Obeying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B10Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B10DObeying_d.mp4' }
+                        ]
                     }
                 }
             }
