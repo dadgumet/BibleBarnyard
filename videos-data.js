@@ -350,7 +350,7 @@ const videosData = {
                         videos: [
                             { id: 'obeying1', title: 'Obeying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B07Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B07AObeying_d.mp4' },
                             { id: 'obeying2', title: 'Obeying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B08Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B08BObeying_d.mp4' },
-                            // { id: 'obeying3', title: 'Obeying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B09Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B09CObeying_d.mp4' },
+                            { id: 'obeying3', title: 'Obeying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B09Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B09CObeying_d.mp4' },
                             // { id: 'obeying4', title: 'Obeying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B10Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B10DObeying_d.mp4' }
                         ]
                     }
