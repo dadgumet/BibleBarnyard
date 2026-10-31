@@ -336,6 +336,33 @@
             padding: 0 4px;
             font-style: italic;
         }
+
+        .featured-category {
+            flex-basis: 320px;
+            max-width: 520px;
+            text-align: center;
+        }
+
+        .featured-category-link {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .featured-category-link:hover h4 {
+            text-decoration: underline;
+        }
+
+        .featured-category-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .featured-category-description {
+            margin: 10px 4px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
@@ -763,6 +790,22 @@
                 clustersDiv.appendChild(clusterDiv);
             }
 
+            if (tab.image && tab.description && tab.url) {
+                const clusterDiv = document.createElement('div');
+                clusterDiv.className = 'cluster';
+
+                const tabHeader = document.createElement('h3');
+                tabHeader.textContent = `${tab.emoji} ${currentTab}`;
+                clusterDiv.appendChild(tabHeader);
+
+                const subclustersDiv = document.createElement('div');
+                subclustersDiv.className = 'subclusters';
+                subclustersDiv.appendChild(buildCategoryBlock(currentTab, tab));
+
+                clusterDiv.appendChild(subclustersDiv);
+                clustersDiv.appendChild(clusterDiv);
+            }
+
             tabContents.appendChild(clustersDiv);
 
             // Re-attach listeners and update viewed icons
@@ -775,8 +818,39 @@
             const subclusterDiv = document.createElement('div');
             subclusterDiv.className = 'subcluster';
 
+            if (category.image && category.description && category.url) {
+                subclusterDiv.classList.add('featured-category');
+
+                const categoryHeader = document.createElement('h4');
+                categoryHeader.textContent = `${category.emoji} ${categoryName}`;
+                subclusterDiv.appendChild(categoryHeader);
+
+                const categoryLink = document.createElement('a');
+                categoryLink.className = 'featured-category-link';
+                categoryLink.href = category.url;
+                categoryLink.target = '_blank';
+                categoryLink.rel = 'noopener noreferrer';
+                categoryLink.setAttribute('aria-label', `Visit ${categoryName}`);
+
+                const categoryImage = document.createElement('img');
+                categoryImage.className = 'featured-category-image';
+                categoryImage.src = category.image;
+                categoryImage.alt = `${categoryName} — explore the website`;
+                categoryLink.appendChild(categoryImage);
+
+                const description = document.createElement('p');
+                description.className = 'featured-category-description';
+                description.textContent = category.description;
+                categoryLink.appendChild(description);
+
+                const callToAction = document.createElement('span');
+                callToAction.textContent = `Visit ${categoryName} →`;
+                categoryLink.appendChild(callToAction);
+
+                subclusterDiv.appendChild(categoryLink);
+            }
             // Handle categories with subcategories (legacy / Specials)
-            if (category.subcategories) {
+            else if (category.subcategories) {
                 for (const subcatName in category.subcategories) {
                     const subcat = category.subcategories[subcatName];
 
