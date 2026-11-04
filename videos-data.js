@@ -360,7 +360,7 @@ const videosData = {
                         bibleBooks: 'Song of Solomon, Isaiah',
                         videos: [
                             { id: 'faithfulness1', title: 'Faithfulness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B11Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B11AFaithfulness_d.mp4' },
-                            //{ id: 'faithfulness2', title: 'Faithfulness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B12BFaithfulness_d.mp4' },
+                            { id: 'faithfulness2', title: 'Faithfulness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B12BFaithfulness_d.mp4' },
                             // { id: 'faithfulness3', title: 'Faithfulness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B13CFaithfulness_d.mp4' },
                             // { id: 'faithfulness4', title: 'Faithfulness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14DFaithfulness_d.mp4' }
                         ]
