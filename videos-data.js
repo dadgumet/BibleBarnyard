@@ -328,10 +328,10 @@ const videosData = {
                         episodes: 'Episodes 1-4',
                         bibleBooks: 'Ecclesiastes',
                         videos: [
-                            { id: 'worry1', title: 'Worry 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B01Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01AWorry_d.mp4' },
-                            { id: 'worry2', title: 'Worry 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B02Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01BWorry_d.mp4' },
-                            { id: 'worry3', title: 'Worry 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B03Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02AWorry_d.mp4' },
-                            { id: 'worry4', title: 'Worry 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B04Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02BWorry_d.mp4' }
+                            { id: 'worry1', title: 'Worry 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B01Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01Worry_d.mp4' },
+                            { id: 'worry2', title: 'Worry 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B02Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B01Worry_d.mp4' },
+                            { id: 'worry3', title: 'Worry 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B03Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02Worry_d.mp4' },
+                            { id: 'worry4', title: 'Worry 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B04Worry_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B02Worry_d.mp4' }
                         ]
                     },
                     'Fear': {
@@ -339,8 +339,8 @@ const videosData = {
                         episodes: 'Episodes 5-6',
                         bibleBooks: 'Ecclesiastes',
                         videos: [
-                            { id: 'fear1', title: 'Fear 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B05Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B05AFear_d.mp4' },
-                            { id: 'fear2', title: 'Fear 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B06Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B06BFear_d.mp4' },
+                            { id: 'fear1', title: 'Fear 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B05Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B05Fear_d.mp4' },
+                            { id: 'fear2', title: 'Fear 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B06Fear_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B06Fear_d.mp4' },
                        ]
                     },
                     'Obeying': {
@@ -348,10 +348,10 @@ const videosData = {
                         episodes: 'Episodes 7-10',
                         bibleBooks: 'Ecclesiastes, Song of Solomon',
                         videos: [
-                            { id: 'obeying1', title: 'Obeying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B07Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B07AObeying_d.mp4' },
-                            { id: 'obeying2', title: 'Obeying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B08Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B08BObeying_d.mp4' },
-                            { id: 'obeying3', title: 'Obeying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B09Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B09CObeying_d.mp4' },
-                            { id: 'obeying4', title: 'Obeying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B10Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B10DObeying_d.mp4' }
+                            { id: 'obeying1', title: 'Obeying 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B07Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B07Obeying_d.mp4' },
+                            { id: 'obeying2', title: 'Obeying 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B08Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B08Obeying_d.mp4' },
+                            { id: 'obeying3', title: 'Obeying 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B09Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B09Obeying_d.mp4' },
+                            { id: 'obeying4', title: 'Obeying 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B10Obeying_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B10Obeying_d.mp4' }
                         ]
                     },
                     'Faithfulness': {
@@ -359,11 +359,10 @@ const videosData = {
                         episodes: 'Episodes 11-14',
                         bibleBooks: 'Song of Solomon, Isaiah',
                         videos: [
-                            { id: 'faithfulness1', title: 'Faithfulness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B11Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B11AFaithfulness_d.mp4' },
-                            { id: 'faithfulness2', title: 'Faithfulness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B12BFaithfulness_d.mp4' },
-                            // { id: 'faithfulness3', title: 'Faithfulness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B13CFaithfulness_d.mp4' },
-                            // { id: 'faithfulness4', title: 'Faithfulness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14DFaithfulness_d.mp4' },
-                            // { id: 'faithfulness4', title: 'Faithfulness 5 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14DFaithfulness_d.mp4' }
+                            { id: 'faithfulness1', title: 'Faithfulness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B11Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B11Faithfulness_d.mp4' },
+                            { id: 'faithfulness2', title: 'Faithfulness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_d.mp4' },
+                            { id: 'faithfulness3', title: 'Faithfulness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_d.mp4' },
+                            // { id: 'faithfulness4', title: 'Faithfulness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_d.mp4' }
                         ]
                     }
                 }
