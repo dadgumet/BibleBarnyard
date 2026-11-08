@@ -362,8 +362,7 @@ const videosData = {
                             { id: 'faithfulness1', title: 'Faithfulness 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B11Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B11Faithfulness_d.mp4' },
                             { id: 'faithfulness2', title: 'Faithfulness 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B12Faithfulness_d.mp4' },
                             { id: 'faithfulness3', title: 'Faithfulness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_d.mp4' },
-                            // { id: 'faithfulness4', title: 'Faithfulness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_d.mp4' },
-                            // { id: 'faithfulness5', title: 'Faithfulness 5 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B15Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B15Faithfulness_d.mp4' }
+                            { id: 'faithfulness4', title: 'Faithfulness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_d.mp4' }
                         ]
                     }
                 }
