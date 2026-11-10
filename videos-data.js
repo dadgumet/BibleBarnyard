@@ -319,8 +319,8 @@ const videosData = {
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
                     ['Worry', 'Fear'],
-                    ['Obeying'],
-                    ['Faithfulness']
+                    ['Obeying', 'Faithfulness'],
+                    ['NotAfraid']
                 ],
                 categories: {
                     'Worry': {
@@ -364,7 +364,16 @@ const videosData = {
                             { id: 'faithfulness3', title: 'Faithfulness 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B13Faithfulness_d.mp4' },
                             { id: 'faithfulness4', title: 'Faithfulness 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B14Faithfulness_d.mp4' }
                         ]
-                    }
+                    },
+                    'NotAfraid': {
+                        emoji: '😎',
+                        episodes: 'Episodes 15-16', 
+                        bibleBooks: 'Isaiah',
+                        videos: [
+                            { id: 'notafraid1', title: 'Not Afraid 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B15NotAfrai_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B15NotAfrai_d.mp4' },
+                            // { id: 'notafraid2', title: 'Not Afraid 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_d.mp4' }
+                        ]
+                    }           
                 }
             }
         }
