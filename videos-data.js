@@ -371,7 +371,7 @@ const videosData = {
                         bibleBooks: 'Isaiah',
                         videos: [
                             { id: 'notafraid1', title: 'Not Afraid 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B15NotAfrai_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B15NotAfrai_d.mp4' },
-                            // { id: 'notafraid2', title: 'Not Afraid 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_d.mp4' }
+                            { id: 'notafraid2', title: 'Not Afraid 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_d.mp4' }
                         ]
                     }           
                 }
