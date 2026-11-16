@@ -367,13 +367,13 @@ const videosData = {
                     },
                     'NotAfraid': {
                         emoji: '😎',
-                        episodes: 'Episodes 15-16', 
-                        bibleBooks: 'Isaiah',
+                        episodes: 'Episodes 15-18', 
+                        bibleBooks: 'Isaiah, Jeremiah',
                         videos: [
                             { id: 'notafraid1', title: 'Not Afraid 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B15NotAfrai_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B15NotAfrai_d.mp4' },
                             { id: 'notafraid2', title: 'Not Afraid 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B16NotAfraid_d.mp4' },
                             { id: 'notafraid3', title: 'Not Afraid 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B17NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B17NotAfraid_d.mp4' },
-                            // { id: 'notafraid4', title: 'Not Afraid 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B18NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B18NotAfraid_d.mp4' }
+                            { id: 'notafraid4', title: 'Not Afraid 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B18NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B18NotAfraid_d.mp4' }
                         ]
                     }           
                 }
