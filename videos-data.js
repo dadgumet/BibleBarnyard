@@ -320,7 +320,7 @@ const videosData = {
                 gridLayout: [
                     ['Worry', 'Fear'],
                     ['Obeying', 'Faithfulness'],
-                    ['NotAfraid']
+                    ['NotAfraid', 'SelfControl']
                 ],
                 categories: {
                     'Worry': {
@@ -375,7 +375,17 @@ const videosData = {
                             { id: 'notafraid3', title: 'Not Afraid 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B17NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B17NotAfraid_d.mp4' },
                             { id: 'notafraid4', title: 'Not Afraid 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B18NotAfraid_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B18NotAfraid_d.mp4' }
                         ]
-                    }           
+                    },
+                    'SelfControl': {
+                        emoji: '💪',
+                        episodes: 'Episodes 19-22',
+                        bibleBooks: 'Jeremiah, Lamentations',
+                        videos: [
+                            { id: 'selfcontrol1', title: 'Self Control 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B19SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B19SelfControl_d.mp4' },
+                            //{ id: 'selfcontrol2', title: 'Self Control 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B20SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B20SelfControl_d.mp4' },
+                            //{ id: 'selfcontrol3', title: 'Self Control 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_d.mp4' }
+                        ]
+                    }              
                 }
             }
         }
