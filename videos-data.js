@@ -383,7 +383,7 @@ const videosData = {
                         videos: [
                             { id: 'selfcontrol1', title: 'Self Control 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B19SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B19SelfControl_d.mp4' },
                             { id: 'selfcontrol2', title: 'Self Control 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B20SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B20SelfControl_d.mp4' },
-                            //{ id: 'selfcontrol3', title: 'Self Control 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_d.mp4' }
+                            { id: 'selfcontrol3', title: 'Self Control 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_d.mp4' }
                         ]
                     }              
                 }
