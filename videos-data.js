@@ -318,9 +318,9 @@ const videosData = {
                 // gridLayout defines how categories are arranged in columns.
                 // Each inner array is one column; values are category keys.
                 gridLayout: [
-                    ['Worry', 'Fear'],
-                    ['Obeying', 'Faithfulness'],
-                    ['NotAfraid', 'SelfControl']
+                    ['Worry', 'Fear', 'Obeying'],
+                    ['Faithfulness','NotAfraid'],
+                    ['SelfControl','Prejudice']
                 ],
                 categories: {
                     'Worry': {
@@ -386,7 +386,18 @@ const videosData = {
                             { id: 'selfcontrol3', title: 'Self Control 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B21SelfControl_d.mp4' },
                             { id: 'selfcontrol4', title: 'Self Control 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B22SelfControl_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B22SelfControl_d.mp4' }
                         ]
-                    }              
+                    },
+                    'Prejudice': {
+                        emoji: '❤️🤝😊',
+                        episodes: 'Episodes 23-26',  
+                        bibleBooks: ' Lamentations',    
+                        videos: [
+                            { id: 'prejudice1', title: 'Prejudice 1 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B23Prejudice_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B23Prejudice_d.mp4' },
+                            // { id: 'prejudice2', title: 'Prejudice 2 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B24Prejudice_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B24Prejudice_d.mp4' },
+                            // { id: 'prejudice3', title: 'Prejudice 3 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B25Prejudice_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B25Prejudice_d.mp4' },
+                            // { id: 'prejudice4', title: 'Prejudice 4 of 4', stream: 'https://assets.biblebarnyard.com/series/B/B26Prejudice_s.mp4', download: 'https://assets.biblebarnyard.com/series/B/B26Prejudice_d.mp4' }
+                        ]
+                    }       
                 }
             }
         }
